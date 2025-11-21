@@ -4,9 +4,9 @@
   --color-brand-cyan: #55BFF9;
   --color-brand-lilac: #BDACCF;
 
-  --color-primary: #111827;        /* main text */
-  --color-muted: #6B7280;          /* secondary text */
-  --color-bg: #ffffff;             /* page background */
+  --color-primary: #111827;
+  --color-muted: #6B7280;
+  --color-bg: #ffffff;
   --color-border: #E5E7EB;
 
   --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.10);
