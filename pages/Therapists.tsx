@@ -9,7 +9,7 @@ const THERAPISTS: Therapist[] = [
     name: "Ashwini",
     role: "Couple Counsellor",
     bio: "Ashwini is a counselling psychologist who works with couples and individuals to improve communication, resolve conflict, and support emotional well-being. She specialises in marital counselling, relationship issues, anxiety, stress, and personal growth. Her approach is warm, practical, and focused on real, lasting change.",
-    image: "https://picsum.photos/seed/ananya/400/500",
+    image: "<img src="df4a6055c18e457193282ccbde326fd7.webp" alt="Ashwini Rao" />",
     specialties: ["Anxiety", "Trauma", "Individual Therapy"]
   },
   {
