@@ -6,9 +6,9 @@ import { Therapist } from '../types';
 const THERAPISTS: Therapist[] = [
   {
     id: 1,
-    name: "Dr. Ananya Iyer",
-    role: "Senior Clinical Psychologist",
-    bio: "With over 15 years of experience, Dr. Ananya specializes in trauma recovery and anxiety management. She believes in a holistic approach that integrates mindfulness with cognitive behavioral techniques.",
+    name: "Ashwini",
+    role: "Couple Counsellor",
+    bio: "Ashwini is a counselling psychologist who works with couples and individuals to improve communication, resolve conflict, and support emotional well-being. She specialises in marital counselling, relationship issues, anxiety, stress, and personal growth. Her approach is warm, practical, and focused on real, lasting change.",
     image: "https://picsum.photos/seed/ananya/400/500",
     specialties: ["Anxiety", "Trauma", "Individual Therapy"]
   },
