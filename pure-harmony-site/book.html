@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Book a Session | Pure Harmony</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/img/logo.png" alt="Logo" />
+        <span class="nav-logo-text">Pure Harmony</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="therapists.html">Therapists</a>
+        <a href="book.html" class="active">Book a Session</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container booking-layout">
+
+        <div class="booking-card">
+          <h1 class="section-title">Book a session</h1>
+          <p class="section-subtitle">Fill in your details and we will call/WhatsApp you to confirm.</p>
+
+          <form>
+            <div class="form-field">
+              <label>Name</label>
+              <input type="text" required>
+            </div>
+
+            <div class="form-field">
+              <label>Mobile Number</label>
+              <input type="tel" required>
+            </div>
+
+            <div class="form-field">
+              <label>Type of session</label>
+              <select required>
+                <option value="">Select one</option>
+                <option value="individual">Individual therapy</option>
+                <option value="couple">Couple therapy</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label>Preferred therapist</label>
+              <select required>
+                <option value="">Select</option>
+                <option value="ashwini">Dr. Ashwini</option>
+                <option value="any">Anyone available</option>
+              </select>
+            </div>
+
+            <button class="btn" type="submit">Submit request</button>
+          </form>
+        </div>
+
+        <div class="booking-card">
+          <h3>Prefer talking first?</h3>
+          <p>Call us for guidance before booking:</p>
+          <p><strong>+91 90000 00000</strong></p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Pure Harmony Counseling</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
