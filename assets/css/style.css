@@ -352,8 +352,9 @@ p {
 
 .therapists-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(2, minmax(280px, 1fr));
+  gap: 24px;
+  align-items: stretch;
 }
 
 .therapist-card {
