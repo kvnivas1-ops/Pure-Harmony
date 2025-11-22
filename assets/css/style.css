@@ -63,7 +63,12 @@ h4 {
 p {
   font-size: 0.98rem;
 }
-
+.nav-logo-text {
+  font-family: "Instrument Serif", serif !important;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
 /* Layout: header, nav, footer */
 
 .site-header {
