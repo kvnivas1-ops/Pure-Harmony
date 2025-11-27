@@ -633,104 +633,99 @@ html {
 .toc a:hover {
   text-decoration: underline;
 }
-/* ==== HERO OVERRIDES – PLACE AT BOTTOM OF style.css ==== */
+/* ============= HERO CLEAN VERSION ============= */
 
-/* Gradient area */
+/* Gradient background */
 .hero {
-  background: linear-gradient(90deg, #f18d16, #ada3ff);
-  padding: 80px 0;
+  background: linear-gradient(135deg, #f18d16, #ada3ff);
+  padding: 80px 0 70px;
+  text-align: center; 
 }
 
-/* Inner width + alignment */
-.hero .container.hero-grid {
-  max-width: 760px;
+/* Centered container */
+.container.hero-grid {
+  max-width: 780px;
   margin: 0 auto;
-  padding: 0 24px;
 }
 
-/* Badge */
+/* Hero Badge */
 .hero-badge {
   display: inline-block;
   background: #eef0ff;
-  padding: 8px 16px;
-  border-radius: 14px;
+  padding: 10px 22px;
+  border-radius: 16px;
   font-family: "Quicksand", sans-serif;
-  color: #5d62d5;
-  font-size: 14px;
-  margin-bottom: 24px;
+  color: #4f4cbf;
+  font-size: 15px;
+  margin-bottom: 32px;
 }
 
-/* Heading – Instrument Serif */
+/* Heading */
 .hero-title {
   font-family: "Instrument Serif", serif;
-  font-size: 56px;
+  font-size: 64px;
   line-height: 1.12;
   font-weight: 400;
-  color: #1b1b1b;
-  margin-bottom: 18px;
+  color: #141414;
+  margin-bottom: 22px;
 }
 
-/* Subtitle – Quicksand */
+/* Subtitle */
 .hero-subtitle {
   font-family: "Quicksand", sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.7;
-  color: #4a4a4a;
-  margin-bottom: 22px;
-  max-width: 640px;
+  color: #373737;
+  max-width: 650px;
+  margin: 0 auto 30px;
 }
 
-/* Small points under paragraph */
+/* Checkmark points */
 .hero-meta {
   font-family: "Quicksand", sans-serif;
-  font-size: 16px;
-  color: #444;
+  font-size: 17px;
+  color: #3f3f3f;
+  justify-content: center;
   display: flex;
-  gap: 20px;
-  margin-bottom: 28px;
+  gap: 24px;
+  margin-bottom: 32px;
 }
 
 /* Buttons row */
 .hero-actions {
   display: flex;
-  gap: 16px;
-  margin-bottom: 28px;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 32px;
 }
 
 /* Primary button */
 .hero-actions .btn {
-  background: linear-gradient(90deg, #ffdf94, #87b6ff);
-  color: #fff;
-  padding: 14px 24px;
+  font-family: "Quicksand", sans-serif !important;
+  padding: 14px 26px;
   border-radius: 14px;
-  font-family: "Quicksand", sans-serif;
   font-size: 16px;
-  text-decoration: none;
-  border: none;
 }
 
 /* Outline button */
-.hero-actions .btn.btn-outline {
-  background: transparent;
-  border: 2px solid #111;
-  color: #111;
+.hero-actions .btn-outline {
+  font-family: "Quicksand", sans-serif !important;
+  border: 2px solid #141414;
 }
 
-/* Note line */
+/* Note */
 .hero-note {
   font-family: "Quicksand", sans-serif;
   font-size: 15px;
-  color: #5a5a5a;
+  color: #4e4e4e;
+  max-width: 620px;
+  margin: 0 auto;
 }
 
-/* Mobile tweaks */
-@media (max-width: 600px) {
-  .hero {
-    padding: 56px 0;
-  }
-
+/* Mobile */
+@media (max-width: 640px) {
   .hero-title {
-    font-size: 38px;
+    font-size: 40px;
   }
 
   .hero-actions {
