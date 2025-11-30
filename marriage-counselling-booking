@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Marriage Counselling in Chennai | Pure Harmony</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Marriage and couple counselling in Chennai and online with counselling psychologist Ashwini Rao. Chat with us on WhatsApp to understand if counselling is right for you.">
+
+  <!-- Google Fonts (same as your other pages) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Your main site stylesheet (optional but recommended for consistency) -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <style>
+    :root {
+      --color-brand-yellow: #F3A60D;
+      --color-brand-cyan: #55BFF9;
+      --color-brand-lilac: #BDACCF;
+
+      --color-primary: #111827;
+      --color-muted: #6B7280;
+      --color-bg: #F9FAFB;
+      --color-border: #E5E7EB;
+
+      --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.10);
+      --radius-lg: 22px;
+      --radius-md: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-color: var(--color-bg);
+      color: var(--color-primary);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .page-wrapper {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      width: min(1120px, 100% - 3rem);
+      margin: 0 auto;
+    }
+
+    /* Simple top bar with logo */
+    .simple-header {
+      padding: 16px 0;
+      background: #ffffff;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .simple-header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .nav-logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-logo img {
+      height: 32px;
+      width: auto;
+    }
+
+    .nav-logo-text {
+      font-weight: 600;
+      font-size: 1rem;
+      letter-spacing: 0.02em;
+    }
+
+    .header-tagline {
+      font-size: 0.85rem;
+      color: var(--color-muted);
+      text-align: right;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 32px 0 40px;
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.1fr);
+      gap: 32px;
+      align-items: center;
+    }
+
+    .hero-image-wrapper {
+      background: linear-gradient(135deg, rgba(243, 166, 13, 0.08), rgba(85, 191, 249, 0.12));
+      border-radius: 26px;
+      padding: 24px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .hero-image-inner {
+      background: #ffffff;
+      border-radius: 22px;
+      padding: 18px;
+      border: 1px solid var(--color-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 260px;
+    }
+
+    .hero-image-inner img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .hero-content {
+      padding: 8px 0;
+    }
+
+    .hero-tagline {
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.8rem;
+      color: var(--color-muted);
+      margin-bottom: 8px;
+    }
+
+    .hero-heading {
+      font-family: "Playfair Display", "Times New Roman", serif;
+      font-size: 2.1rem;
+      line-height: 1.2;
+      margin: 0 0 12px;
+    }
+
+    .hero-subtitle {
+      font-size: 0.98rem;
+      color: var(--color-muted);
+      margin-bottom: 12px;
+    }
+
+    .hero-note {
+      font-size: 0.9rem;
+      color: #374151;
+      margin-bottom: 18px;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--color-brand-yellow), var(--color-brand-cyan));
+      border: none;
+      color: #111827;
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.18);
+      transition: transform 0.12s ease, box-shadow 0.12s ease, filter 0.12s ease;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 14px 32px rgba(15, 23, 42, 0.22);
+      filter: brightness(1.02);
+    }
+
+    .btn-primary:active {
+      transform: translateY(0);
+      box-shadow: 0 8px 18px rgba(15, 23, 42, 0.18);
+    }
+
+    .cta-helper {
+      font-size: 0.85rem;
+      color: var(--color-muted);
+      max-width: 320px;
+    }
+
+    .secondary-link {
+      font-size: 0.88rem;
+      margin-top: 8px;
+    }
+
+    .secondary-link a {
+      color: #1D4ED8;
+      font-weight: 500;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+    }
+
+    /* Sections */
+    .section {
+      padding: 24px 0;
+    }
+
+    .section-header {
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin: 0 0 4px;
+    }
+
+    .section-intro {
+      font-size: 0.92rem;
+      color: var(--color-muted);
+      margin: 0;
+    }
+
+    .section-body {
+      font-size: 0.95rem;
+      color: #111827;
+      margin-top: 10px;
+    }
+
+    .section-body ul {
+      padding-left: 1.1rem;
+      margin: 8px 0 6px;
+    }
+
+    .section-body li {
+      margin-bottom: 4px;
+    }
+
+    .section-body p {
+      margin: 6px 0;
+    }
+
+    /* About Ashwini */
+    .about-inner {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 18px;
+      align-items: center;
+    }
+
+    .about-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .about-image img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--color-brand-yellow);
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.18);
+      background-color: #ffffff;
+    }
+
+    .about-content p {
+      margin: 6px 0;
+      font-size: 0.95rem;
+    }
+
+    .about-trust {
+      font-size: 0.88rem;
+      color: var(--color-muted);
+      margin-top: 4px;
+    }
+
+    /* Testimonials */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 12px;
+    }
+
+    .testimonial-card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 14px 16px;
+      border: 1px solid var(--color-border);
+      font-size: 0.9rem;
+      box-shadow: 0 8px 22px rgba(15, 23, 42, 0.04);
+    }
+
+    .testimonial-card p {
+      margin: 0;
+    }
+
+    /* FAQ */
+    .faq-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .faq-item {
+      font-size: 0.9rem;
+    }
+
+    .faq-question {
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+
+    .faq-answer {
+      color: #374151;
+    }
+
+    /* Final CTA */
+    .final-cta {
+      padding: 26px 0 32px;
+    }
+
+    .final-cta-box {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 18px 18px 16px;
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow-soft);
+      text-align: left;
+    }
+
+    .final-cta-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .final-cta-text {
+      font-size: 0.92rem;
+      color: var(--color-muted);
+      margin-bottom: 12px;
+    }
+
+    .final-cta .btn-primary {
+      margin-top: 4px;
+    }
+
+    /* Footer mini */
+    .simple-footer {
+      padding: 12px 0 18px;
+      font-size: 0.8rem;
+      color: var(--color-muted);
+      text-align: center;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 20px;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .container {
+        width: 100%;
+        padding: 0 16px;
+      }
+
+      .simple-header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .header-tagline {
+        text-align: left;
+      }
+
+      .hero-heading {
+        font-size: 1.7rem;
+      }
+
+      .about-inner {
+        grid-template-columns: 1fr;
+        text-align: left;
+      }
+
+      .about-image {
+        justify-content: flex-start;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <!-- SIMPLE HEADER -->
+    <header class="simple-header">
+      <div class="container simple-header-inner">
+        <a href="index.html" class="nav-logo">
+          <img src="assets/img/logo.png" alt="Pure Harmony logo">
+          <span class="nav-logo-text">Pure Harmony</span>
+        </a>
+        <div class="header-tagline">
+          Marriage &amp; couple counselling in Chennai and online
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <!-- Left: Image -->
+          <div class="hero-image-wrapper">
+            <div class="hero-image-inner">
+              <!-- Replace this image with your own illustration/photo -->
+              <img src="assets/img/couple-therapy-illustration.png"
+                alt="Illustration of a couple speaking with a therapist">
+            </div>
+          </div>
+
+          <!-- Right: Content -->
+          <div class="hero-content">
+            <div class="hero-tagline">Marriage &amp; couple counselling in Chennai and online</div>
+            <h1 class="hero-heading">Are you looking for marriage counselling?</h1>
+            <p class="hero-subtitle">
+              If you and your partner feel stuck, disconnected, or constantly arguing, you don’t have to handle it on
+              your own. At <strong>Pure Harmony</strong>, you’ll work with
+              <strong>Ashwini Rao</strong>, counselling psychologist with 7+ years of experience, specialising in Indian
+              couples and family dynamics.
+            </p>
+            <p class="hero-note">
+              No judgement. No taking sides. Just a calm space to rebuild understanding.
+            </p>
+
+            <div class="hero-cta-group">
+              <!-- TODO: Replace the WhatsApp link with your actual number -->
+              <a class="btn-primary"
+                href="https://wa.me/91XXXXXXXXXX?text=Hi%20I%27m%20interested%20in%20marriage%20counselling%20sessions"
+                target="_blank" rel="noopener">
+                Chat with us on WhatsApp
+              </a>
+              <div class="cta-helper">
+                Ask your questions, get clarity about counselling, and see if it feels right for you before booking a
+                session.
+              </div>
+            </div>
+
+            <div class="secondary-link">
+              Prefer to book directly?
+              <a href="book.html">Book a counselling session ›</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION: Marriage counselling can help if… -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Marriage counselling can help if…</h2>
+            <p class="section-intro">
+              You don’t need to be in a crisis to seek help. Couples usually reach out when they notice things like:
+            </p>
+          </div>
+          <div class="section-body">
+            <ul>
+              <li>Repeating the same arguments</li>
+              <li>Feeling ignored, unimportant, or misunderstood</li>
+              <li>Trust issues or emotional distance</li>
+              <li>Low intimacy and growing disconnect</li>
+              <li>Pressure or conflict involving families</li>
+              <li>Stressful life changes like pregnancy, a new baby, or job shifts</li>
+              <li>A general feeling of <em>“something is off between us”</em></li>
+            </ul>
+            <p>
+              If any of this sounds familiar, counselling can help you slow down, reflect, and communicate without
+              constant stress.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION: What to expect -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">What to expect at Pure Harmony</h2>
+            <p class="section-intro">
+              The sessions focus on clarity, communication, and strengthening the relationship in a culturally
+              sensitive way.
+            </p>
+          </div>
+          <div class="section-body">
+            <ul>
+              <li>A calm, neutral space where both partners feel heard</li>
+              <li>Support to break unhealthy patterns and repeated fights</li>
+              <li>Guidance for healthier, more respectful communication</li>
+              <li>Clear steps to understand each other’s needs better</li>
+              <li>Practical tools you can use between sessions</li>
+              <li>The option for one partner to start first if the other is unsure</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION: About Ashwini with circular image -->
+      <section class="section">
+        <div class="container about-inner">
+          <div class="about-image">
+            <!-- Circular frame photo of Ashwini -->
+            <img src="assets/img/ashwini-rao-profile.jpg"
+              alt="Ashwini Rao, Counselling Psychologist at Pure Harmony">
+          </div>
+          <div class="about-content">
+            <div class="section-header">
+              <h2 class="section-title">Meet your therapist</h2>
+            </div>
+            <p>
+              <strong>Ashwini Rao</strong> is a counselling psychologist with over 7 years of experience, specialising
+              in marital, relationship, and family counselling. She has supported couples through communication
+              breakdowns, trust concerns, postpartum adjustments, and emotional disconnect.
+            </p>
+            <p>
+              Her approach is warm and practical. She focuses on helping couples understand themselves and each other in
+              a safe, structured space that supports healing and harmony at a pace that feels manageable for both.
+            </p>
+            <p class="about-trust">
+              Sessions are confidential and handled with care.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION: Testimonials -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">What couples say</h2>
+          </div>
+          <div class="testimonials-grid">
+            <div class="testimonial-card">
+              <p>
+                “We were tired of the same fights. After a couple of sessions, we understood each other’s triggers
+                better and things started feeling calmer at home.”
+              </p>
+            </div>
+            <div class="testimonial-card">
+              <p>
+                “Ashwini helped us open up in a way we couldn’t on our own. We finally spoke without blaming each
+                other and could actually listen.”
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION: FAQ -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Common questions</h2>
+          </div>
+          <div class="faq-list">
+            <div class="faq-item">
+              <div class="faq-question">Is counselling only for couples who are separating?</div>
+              <div class="faq-answer">
+                No. Many couples come much earlier so issues don’t grow. Getting support early usually brings better
+                results.
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">What if my partner won’t join?</div>
+              <div class="faq-answer">
+                You can still start alone. Individual sessions help you gain clarity and respond differently, which
+                itself can shift the dynamic. Sometimes this gently encourages the partner to join later.
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">How many sessions will we need?</div>
+              <div class="faq-answer">
+                It varies from couple to couple. Some need a few focused sessions; others prefer longer support. You’ll
+                get more clarity once you chat with us and after the first session.
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">Is everything we share kept private?</div>
+              <div class="faq-answer">
+                Yes. Your privacy is respected and sessions are confidential within standard ethical guidelines for
+                psychological counselling.
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">What is the fee?</div>
+              <div class="faq-answer">
+                Fees are shared transparently on WhatsApp before you confirm anything, so you can decide comfortably.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FINAL CTA -->
+      <section class="final-cta">
+        <div class="container">
+          <div class="final-cta-box">
+            <div class="final-cta-title">
+              Still unsure if marriage counselling is right for you?
+            </div>
+            <div class="final-cta-text">
+              Start with a quick WhatsApp chat. Share what’s going on, ask your questions, and understand what the next
+              steps could look like for you and your partner.
+            </div>
+            <!-- Same WhatsApp CTA repeated -->
+            <a class="btn-primary"
+              href="https://wa.me/91XXXXXXXXXX?text=Hi%20I%27m%20interested%20in%20marriage%20counselling%20sessions"
+              target="_blank" rel="noopener">
+              Chat with us on WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="simple-footer">
+      © <span id="year"></span> Pure Harmony · Marriage &amp; couple counselling
+    </footer>
+  </div>
+
+  <script>
+    // tiny helper for footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
