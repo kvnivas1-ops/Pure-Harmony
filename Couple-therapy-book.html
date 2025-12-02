@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Your main stylesheet (kept for global styles) -->
+  <!-- Your global stylesheet -->
   <link rel="stylesheet" href="assets/css/style.css" />
 
   <style>
@@ -34,10 +34,9 @@
 
     body {
       font-family: "Quicksand", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
-      background: var(--color-bg);
       color: var(--color-primary);
       line-height: 1.6;
-      padding-bottom: 64px; /* space for sticky CTA on mobile */
+      padding-bottom: 64px; /* room for sticky CTA on mobile */
     }
 
     h1, h2, h3, h4, h5, h6 {
@@ -120,11 +119,13 @@
 
     .hero-benefits ul {
       padding-left: 18px;
-      font-size: 0.9rem;
+      list-style: disc;
     }
 
     .hero-benefits li {
       margin-bottom: 4px;
+      font-size: 0.95rem;
+      color: var(--color-primary);
     }
 
     .btn-primary {
@@ -140,6 +141,7 @@
       box-shadow: 0 10px 25px rgba(15, 23, 42, 0.15);
       border: none;
       cursor: pointer;
+      min-height: 46px;
     }
 
     .cta-helper {
@@ -168,7 +170,7 @@
       border-radius: 12px;
     }
 
-    /* HOW THERAPY HELPS */
+    /* HOW COUPLE THERAPY HELPS */
     .section {
       padding: 18px 0;
     }
@@ -354,27 +356,33 @@
     }
 
     /* DESKTOP ADJUSTMENTS */
-    @media (min-width: 769px) {
+    @media (min-width: 900px) {
       body {
         padding-bottom: 0;
       }
 
       .hero {
-        padding: 40px 0 30px;
+        padding: 40px 0 32px;
       }
 
       .hero-inner {
-        flex-direction: row;
-        gap: 32px;
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 40px;
+        align-items: center;
+      }
+
+      .hero-text {
+        max-width: 540px;
       }
 
       .hero-title {
-        font-size: 2.2rem;
+        font-size: 2.3rem;
       }
 
       .btn-primary {
         width: auto;
-        padding-inline: 20px;
+        padding-inline: 22px;
       }
 
       .benefit-cards {
@@ -411,7 +419,7 @@
     <section class="hero">
       <div class="container hero-inner">
 
-        <!-- Text & CTA first -->
+        <!-- Text & CTA -->
         <div class="hero-text">
           <div class="tagline">For Indian couples · Online & in-person</div>
           <h1 class="hero-title">Feeling stuck or distant in your marriage?</h1>
@@ -435,7 +443,7 @@
           </div>
         </div>
 
-        <!-- Illustration second -->
+        <!-- Illustration -->
         <div class="hero-image">
           <div class="hero-image-inner">
             <img src="assets/img/couple-therapy-illustration.png"
@@ -499,7 +507,7 @@
               “Balanced, patient and warm. We never felt judged in any session.” ⭐⭐⭐⭐⭐
             </div>
             <div class="review-card">
-              “Simple suggestions for our daily routine made a big difference.” ⭐⭐⭐⭐⭐
+              “Simple suggestions she gave for our daily routine made a big difference.” ⭐⭐⭐⭐⭐
             </div>
             <!-- Duplicate for smooth loop -->
             <div class="review-card">
@@ -512,7 +520,7 @@
               “Balanced, patient and warm. We never felt judged in any session.” ⭐⭐⭐⭐⭐
             </div>
             <div class="review-card">
-              “Simple suggestions for our daily routine made a big difference.” ⭐⭐⭐⭐⭐
+              “Simple suggestions she gave for our daily routine made a big difference.” ⭐⭐⭐⭐⭐
             </div>
           </div>
         </div>
@@ -535,7 +543,7 @@
 
   <!-- FLOATING WHATSAPP ICON -->
   <a href="https://wa.link/yj6n6r" class="floating-whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <span>🟢</span>
+    <span>✆</span>
   </a>
 
   <!-- STICKY BOTTOM CTA (MOBILE) -->
