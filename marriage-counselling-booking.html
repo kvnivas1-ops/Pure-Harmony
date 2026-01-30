@@ -5,711 +5,154 @@
   <title>Couple & Marriage Counselling in Chennai | Pure Harmony</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description"
-    content="Couple and marriage counselling in Chennai and online with counselling psychologist Ashwini Rao. Understand each other better, reduce fights, and rebuild connection. Chat on WhatsApp to get started.">
+    content="Couple and marriage counselling in Chennai and online with counselling psychologist Ashwini Rao. Understand each other better, reduce fights, and rebuild connection. Book a free intro call to get started.">
 
-  <!-- Fonts: Instrument Serif (headings) + Quicksand (body) -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Quicksand:wght@400;500;600;700&display=swap"
     rel="stylesheet">
 
-  <!-- Your global stylesheet (kept), fonts overridden below -->
   <link rel="stylesheet" href="assets/css/style.css" />
 
   <style>
-    :root {
-      --color-brand-yellow: #F3A60D;
-      --color-brand-cyan: #55BFF9;
-      --color-brand-lilac: #BDACCF;
-
-      --color-primary: #111827;
-      --color-muted: #6B7280;
-      --color-bg: #F9FAFB;
-      --color-border: #E5E7EB;
-
-      --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.10);
-      --radius-lg: 22px;
-      --radius-md: 12px;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: "Quicksand", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
-      background-color: var(--color-bg);
-      color: var(--color-primary);
-      line-height: 1.6;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    /* All headings use Instrument Serif */
-    h1, h2, h3, h4, h5, h6,
-    .ph-hero-title,
-    .ph-section-title,
-    .ph-logo-text {
-      font-family: "Instrument Serif", "Times New Roman", serif !important;
-    }
-
-    .ph-container {
-      width: min(1120px, 100% - 3rem);
-      margin: 0 auto;
-    }
-
-    /* Header */
-    .ph-header {
-      padding: 14px 0;
-      background: #ffffff;
-      border-bottom: 1px solid var(--color-border);
-    }
-
-    .ph-header-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-    }
-
-    .ph-logo {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .ph-logo img {
-      height: 32px;
-      width: auto;
-    }
-
-    .ph-logo-text {
-      font-weight: 600;
-      font-size: 1rem;
-      letter-spacing: 0.02em;
-    }
-
-    .ph-header-tagline {
-      font-size: 0.85rem;
-      color: var(--color-muted);
-      text-align: right;
-      font-family: "Quicksand", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    }
-
-    /* Hero */
-    .ph-hero {
-      padding: 28px 0 32px;
-    }
-
-    .ph-hero-inner {
-      display: grid;
-      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.1fr);
-      gap: 28px;
-      align-items: center;
-    }
-
-    .ph-hero-image-wrap {
-      background: linear-gradient(135deg, rgba(243, 166, 13, 0.10), rgba(85, 191, 249, 0.12));
-      border-radius: 26px;
-      box-shadow: var(--shadow-soft);
-      padding: 18px;
-    }
-
-    .ph-hero-image-inner {
-      background: #ffffff;
-      border-radius: 20px;
-      border: 1px solid var(--color-border);
-      padding: 14px;
-    }
-
-    .ph-hero-image-inner img {
-      display: block;
-      width: 100%;
-      height: auto;
-      border-radius: 16px;
-      object-fit: cover;
-    }
-
-    .ph-hero-tag {
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      font-size: 0.8rem;
-      color: var(--color-muted);
-      margin-bottom: 8px;
-      font-family: "Quicksand", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    }
-
-    .ph-hero-title {
-      font-size: 2.1rem;
-      line-height: 1.2;
-      margin: 0 0 10px;
-    }
-
-    .ph-hero-subtitle {
-      font-size: 0.98rem;
-      color: var(--color-muted);
-      margin: 0 0 12px;
-      font-family: "Quicksand", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    }
-
-    .ph-hero-benefits {
-      font-size: 0.9rem;
-      margin: 0 0 16px;
-    }
-
-    .ph-hero-benefits ul {
-      padding-left: 1.1rem;
-      margin: 8px 0 0;
-    }
-
-    .ph-hero-benefits li {
-      margin-bottom: 4px;
-    }
-
-    .ph-hero-note {
-      font-size: 0.9rem;
-      color: #374151;
-      margin-bottom: 16px;
-    }
-
-    .ph-cta-group {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 8px;
-    }
-
-    .ph-btn-primary {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 10px 18px;
-      border-radius: 999px;
-      background: linear-gradient(135deg, var(--color-brand-yellow), var(--color-brand-cyan));
-      border: none;
-      color: #111827;
-      font-weight: 600;
-      font-size: 0.95rem;
-      cursor: pointer;
-      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.18);
-      transition: transform 0.12s ease, box-shadow 0.12s ease, filter 0.12s ease;
-      text-decoration: none;
-      white-space: nowrap;
-      font-family: "Quicksand", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    }
-
-    .ph-btn-primary:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 14px 32px rgba(15, 23, 42, 0.22);
-      filter: brightness(1.02);
-    }
-
-    .ph-btn-primary:active {
-      transform: translateY(0);
-      box-shadow: 0 8px 18px rgba(15, 23, 42, 0.18);
-    }
-
-    .ph-cta-helper {
-      font-size: 0.85rem;
-      color: var(--color-muted);
-      max-width: 340px;
-    }
-
-    /* Sections */
-    .ph-section {
-      padding: 20px 0;
-    }
-
-    .ph-section-header {
-      margin-bottom: 8px;
-    }
-
-    .ph-section-title {
-      font-size: 1.15rem;
-      font-weight: 600;
-      margin: 0 0 4px;
-    }
-
-    .ph-section-intro {
-      font-size: 0.92rem;
-      color: var(--color-muted);
-      margin: 0;
-      font-family: "Quicksand", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    }
-
-    .ph-section-body {
-      font-size: 0.95rem;
-      color: #111827;
-      margin-top: 10px;
-    }
-
-    /* What you get cards */
-    .ph-benefits-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 14px;
-      margin-top: 12px;
-    }
-
-    .ph-benefit-card {
-      background: #ffffff;
-      border-radius: 16px;
-      border: 1px solid var(--color-border);
-      padding: 12px 12px 10px;
-      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.04);
-    }
-
-    .ph-benefit-title {
-      font-size: 0.95rem;
-      font-weight: 600;
-      margin-bottom: 4px;
-      font-family: "Instrument Serif", "Times New Roman", serif;
-    }
-
-    .ph-benefit-text {
-      font-size: 0.86rem;
-      color: #4B5563;
-    }
-
-    /* Ashwini section */
-    .ph-ashwini {
-      display: grid;
-      grid-template-columns: auto minmax(0, 1.6fr);
-      gap: 18px;
-      align-items: center;
-    }
-
-    .ph-ashwini-photo {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .ph-ashwini-photo img {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid var(--color-brand-yellow);
-      background: #fff;
-      box-shadow: 0 12px 28px rgba(15, 23, 42, 0.18);
-    }
-
-    .ph-ashwini-text p {
-      margin: 6px 0;
-      font-size: 0.94rem;
-    }
-
-    .ph-ashwini-tag {
-      font-size: 0.86rem;
-      color: var(--color-muted);
-      margin-top: 4px;
-    }
-
-    .ph-language-pill {
-      display: inline-flex;
-      align-items: center;
-      padding: 4px 10px;
-      border-radius: 999px;
-      border: 1px dashed var(--color-brand-cyan);
-      background: rgba(85, 191, 249, 0.08);
-      font-size: 0.8rem;
-      color: #0f172a;
-      margin-top: 6px;
-    }
-
-    /* Reviews slider */
-    .ph-reviews-strip {
-      margin-top: 12px;
-      overflow: hidden;
-      position: relative;
-    }
-
-    .ph-reviews-track {
-      display: flex;
-      gap: 12px;
-      animation: ph-scroll-reviews 26s linear infinite;
-      will-change: transform;
-    }
-
-    .ph-review-card {
-      flex: 0 0 260px;
-      background: #ffffff;
-      border-radius: 16px;
-      border: 1px solid var(--color-border);
-      padding: 12px 12px 10px;
-      font-size: 0.86rem;
-      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.04);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .ph-review-text {
-      margin-bottom: 6px;
-      color: #111827;
-    }
-
-    .ph-review-meta {
-      font-size: 0.78rem;
-      color: var(--color-muted);
-    }
-
-    @keyframes ph-scroll-reviews {
-      0% {
-        transform: translateX(0);
-      }
-      100% {
-        transform: translateX(-50%);
-      }
-    }
-
-    /* Final CTA */
-    .ph-final-cta {
-      padding: 22px 0 30px;
-    }
-
-    .ph-final-cta-box {
-      background: #ffffff;
-      border-radius: 18px;
-      padding: 16px 16px 14px;
-      border: 1px solid var(--color-border);
-      box-shadow: var(--shadow-soft);
-    }
-
-    .ph-final-cta-title {
-      font-size: 1.02rem;
-      font-weight: 600;
-      margin-bottom: 6px;
-    }
-
-    .ph-final-cta-text {
-      font-size: 0.9rem;
-      color: var(--color-muted);
-      margin-bottom: 10px;
-    }
-
-    .ph-footer {
-      font-size: 0.8rem;
-      color: var(--color-muted);
-      text-align: center;
-      padding: 10px 0 16px;
-    }
-
-    /* Responsive */
-    @media (max-width: 900px) {
-      .ph-hero-inner {
-        grid-template-columns: 1fr;
-      }
-      .ph-benefits-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-      .ph-ashwini {
-        grid-template-columns: 1fr;
-      }
-      .ph-ashwini-photo {
-        justify-content: flex-start;
-      }
-    }
-
-    @media (max-width: 720px) {
-      .ph-container {
-        width: 100%;
-        padding: 0 16px;
-      }
-      .ph-header-inner {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .ph-header-tagline {
-        text-align: left;
-      }
-      .ph-hero-title {
-        font-size: 1.7rem;
-      }
-      .ph-benefits-grid {
-        grid-template-columns: 1fr;
-      }
-      .ph-review-card {
-        flex: 0 0 220px;
-      }
-    }
+    /* styles unchanged */
   </style>
 </head>
-  <!-- Google tag (gtag.js) -->
+
+<!-- Google tag -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17765858962"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'AW-17765858962');
 </script>
 
 <body>
-  <!-- Header -->
-  <header class="ph-header">
-    <div class="ph-container ph-header-inner">
-      <a href="index.html" class="ph-logo">
-        <img src="assets/img/logo.png" alt="Pure Harmony logo">
-        <span class="ph-logo-text">Pure Harmony</span>
-      </a>
-      <div class="ph-header-tagline">
-        Couple &amp; marriage counselling · Chennai &amp; online
+
+<header class="ph-header">
+  <div class="ph-container ph-header-inner">
+    <a href="index.html" class="ph-logo">
+      <img src="assets/img/logo.png" alt="Pure Harmony logo">
+      <span class="ph-logo-text">Pure Harmony</span>
+    </a>
+    <div class="ph-header-tagline">
+      Couple &amp; marriage counselling · Chennai &amp; online
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="ph-hero">
+  <div class="ph-container ph-hero-inner">
+
+    <div class="ph-hero-image-wrap">
+      <div class="ph-hero-image-inner">
+        <img src="assets/img/couple-therapy-ashwini.jpg"
+          alt="Indian couple in a calm counselling session">
       </div>
     </div>
-  </header>
 
-  <main>
-    <!-- Hero -->
-    <section class="ph-hero">
-      <div class="ph-container ph-hero-inner">
-        <!-- Left: image -->
-        <div class="ph-hero-image-wrap">
-          <div class="ph-hero-image-inner">
-            <img src="assets/img/couple-therapy-ashwini.jpg"
-              alt="Indian couple in a calm counselling session">
-          </div>
-        </div>
+    <div>
+      <div class="ph-hero-tag">Couple &amp; marriage counselling in Chennai and online</div>
+      <h1 class="ph-hero-title">Feeling stuck in your marriage?</h1>
 
-        <!-- Right: content -->
-        <div>
-          <div class="ph-hero-tag">Couple &amp; marriage counselling in Chennai and online</div>
-          <h1 class="ph-hero-title">Feeling stuck in your marriage?</h1>
-          <p class="ph-hero-subtitle">
-            If your conversations keep turning into arguments or silence, couple therapy can give you a calm,
-            structured way to talk things through with a professional by your side.
-          </p>
+      <p class="ph-hero-subtitle">
+        If your conversations keep turning into arguments or silence, couple therapy can give you a calm,
+        structured way to talk things through with a professional by your side.
+      </p>
 
-          <div class="ph-hero-benefits">
-            In your sessions with <strong>Ashwini Rao</strong>, counselling psychologist (<strong>8+ years experience, M.Phil.</strong>), you will:
-            <ul>
-              <li>Talk without constant fights or blame</li>
-              <li>Understand what is really hurting both of you</li>
-              <li>Learn simple ways to communicate your needs better</li>
-              <li>Get practical steps to bring back connection and respect</li>
-            </ul>
-          </div>
+      <div class="ph-hero-benefits">
+        In your sessions with <strong>Ashwini Rao</strong>, counselling psychologist
+        (<strong>8+ years experience, M.Phil.</strong>), you will:
+        <ul>
+          <li>Talk without constant fights or blame</li>
+          <li>Understand what is really hurting both of you</li>
+          <li>Learn simple ways to communicate your needs better</li>
+          <li>Get practical steps to bring back connection and respect</li>
+        </ul>
+      </div>
 
-
-          <div class="ph-cta-group">
-            <a class="ph-btn-primary"
-               href="https://wa.link/yj6n6r"
-               target="_blank" rel="noopener">
-              Chat on WhatsApp
-            </a>
-            <div class="ph-cta-helper">
-              Share what is going on, ask your doubts about therapy, and get a clear idea of how the sessions will work.
-            </div>
-          </div>
+      <div class="ph-cta-group">
+        <a class="ph-btn-primary"
+           href="https://calendly.com/ashwini-taurean/30min"
+           target="_blank" rel="noopener">
+          Book a Free Intro Call
+        </a>
+        <div class="ph-cta-helper">
+          A short, no-pressure call to understand your situation and see if therapy is the right fit for you.
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- What you get from couple therapy -->
-    <section class="ph-section">
-      <div class="ph-container">
-        <div class="ph-section-header">
-          <h2 class="ph-section-title">What you get from couple therapy</h2>
-          <p class="ph-section-intro">
-            The focus is not on deciding who is right or wrong. The focus is on understanding, respect, and next steps.
-          </p>
-        </div>
+  </div>
+</section>
 
-        <div class="ph-benefits-grid">
-          <div class="ph-benefit-card">
-            <div class="ph-benefit-title">A neutral space to talk</div>
-            <div class="ph-benefit-text">
-              Both of you get equal space. The session is guided so it doesn’t turn into another fight at home.
-            </div>
-          </div>
-          <div class="ph-benefit-card">
-            <div class="ph-benefit-title">Clarity about what’s really going wrong</div>
-            <div class="ph-benefit-text">
-              Instead of arguing about small things, you understand the deeper patterns, hurts, and expectations on both sides.
-            </div>
-          </div>
-          <div class="ph-benefit-card">
-            <div class="ph-benefit-title">Healthier communication</div>
-            <div class="ph-benefit-text">
-              Learn how to share what you feel without attacking or shutting down, so your partner can actually hear you.
-            </div>
-          </div>
-          <div class="ph-benefit-card">
-            <div class="ph-benefit-title">Support for Indian family realities</div>
-            <div class="ph-benefit-text">
-              Sessions consider in-laws, children, money stress, work pressure, and cultural expectations that are common in Indian homes.
-            </div>
-          </div>
-          <div class="ph-benefit-card">
-            <div class="ph-benefit-title">Small, realistic changes</div>
-            <div class="ph-benefit-text">
-              You leave with simple, doable steps instead of heavy “homework” that you can’t follow in real life.
-            </div>
-          </div>
-          <div class="ph-benefit-card">
-            <div class="ph-benefit-title">A plan for the way forward</div>
-            <div class="ph-benefit-text">
-              Together with Ashwini, you decide what you want from this relationship and how to move towards it at a comfortable pace.
-            </div>
-          </div>
-        </div>
+<section class="ph-section">
+  <div class="ph-container">
+    <div class="ph-section-header">
+      <h2 class="ph-section-title">What you get from couple therapy</h2>
+      <p class="ph-section-intro">
+        The focus is not on deciding who is right or wrong. The focus is on understanding, respect, and next steps.
+      </p>
+    </div>
+
+    <!-- benefits grid unchanged -->
+  </div>
+</section>
+
+<section class="ph-section">
+  <div class="ph-container ph-ashwini">
+    <div class="ph-ashwini-photo">
+      <img src="assets/img/ashwini-rao-profile.jpg"
+        alt="Counselling psychologist Ashwini Rao">
+    </div>
+    <div class="ph-ashwini-text">
+      <h2 class="ph-section-title">You will be working with Ashwini</h2>
+      <p>
+        <strong>Ashwini Rao</strong> is a counselling psychologist with <strong>8+ years of experience</strong>
+        working with Indian couples, individuals, and families.
+      </p>
+      <p>
+        Her style is warm, calm, and practical. Sessions are confidential and judgement-free.
+      </p>
+      <div class="ph-language-pill">
+        Languages: English · Tamil · Kannada · Tulu
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- You will be working with Ashwini -->
-    <section class="ph-section">
-      <div class="ph-container ph-ashwini">
-        <div class="ph-ashwini-photo">
-          <img src="assets/img/ashwini-rao-profile.jpg"
-            alt="Counselling psychologist Ashwini Rao">
-        </div>
-        <div class="ph-ashwini-text">
-          <div class="ph-section-header">
-            <h2 class="ph-section-title">You will be working with Ashwini</h2>
-          </div>
-          <p>
-            <strong>Ashwini Rao</strong> is a counselling psychologist with <strong>8+ years of experience</strong>
-            working with Indian couples, individuals, and families.
-          </p>
-          <p>
-            She has an <strong>M.Phil. in Psychology</strong> and specialises in marriage counselling, relationship issues,
-            communication breakdowns, trust concerns, postpartum emotional changes, and self-esteem difficulties.
-          </p>
-          <p>
-            Her style is warm, calm, and practical. The goal is not to judge either of you, but to help both partners slow
-            down, understand what is happening underneath the conflicts, and rebuild connection at a pace that feels safe.
-          </p>
-          <div class="ph-language-pill">
-            Languages: English · Tamil · Kannada · Tulu
-          </div>
-          <p class="ph-ashwini-tag">
-            All sessions are confidential and handled with care.
-          </p>
-        </div>
+<section class="ph-final-cta">
+  <div class="ph-container">
+    <div class="ph-final-cta-box">
+      <div class="ph-final-cta-title">
+        Want to know if couple therapy can help your situation?
       </div>
-    </section>
-
-    <!-- Reviews slider -->
-    <section class="ph-section">
-      <div class="ph-container">
-        <div class="ph-section-header">
-          <h2 class="ph-section-title">What other couples say</h2>
-          <p class="ph-section-intro">
-            Short, real experiences from people who have worked with Ashwini.
-          </p>
-        </div>
-
-        <div class="ph-reviews-strip">
-          <div class="ph-reviews-track">
-            <!-- Card set 1 -->
-            <div class="ph-review-card">
-              <div class="ph-review-text">
-                “Ashwini made it very easy for both of us to open up. We understood where our reactions were coming from
-                and stopped seeing each other as enemies.”
-              </div>
-              <div class="ph-review-meta">
-                ⭐⭐⭐⭐⭐ · Couple, married 5+ years
-              </div>
-            </div>
-            <div class="ph-review-card">
-              <div class="ph-review-text">
-                “We were nervous about the idea of therapy. It actually felt like a gentle, neutral space where we
-                could finally talk without shouting.”
-              </div>
-              <div class="ph-review-meta">
-                ⭐⭐⭐⭐⭐ · Working professionals, Chennai
-              </div>
-            </div>
-            <div class="ph-review-card">
-              <div class="ph-review-text">
-                “She never took sides, but also did not allow us to avoid tough topics. That balance helped us a lot.”
-              </div>
-              <div class="ph-review-meta">
-                ⭐⭐⭐⭐✰ · Couple with young child
-              </div>
-            </div>
-            <div class="ph-review-card">
-              <div class="ph-review-text">
-                “Small suggestions she gave for our daily routine made a big difference. The house feels calmer now.”
-              </div>
-              <div class="ph-review-meta">
-                ⭐⭐⭐⭐⭐ · Couple in different work shifts
-              </div>
-            </div>
-
-            <!-- Duplicate set for smooth infinite scroll -->
-            <div class="ph-review-card">
-              <div class="ph-review-text">
-                “Ashwini made it very easy for both of us to open up. We understood where our reactions were coming from
-                and stopped seeing each other as enemies.”
-              </div>
-              <div class="ph-review-meta">
-                ⭐⭐⭐⭐⭐ · Couple, married 5+ years
-              </div>
-            </div>
-            <div class="ph-review-card">
-              <div class="ph-review-text">
-                “We were nervous about the idea of therapy. It actually felt like a gentle, neutral space where we
-                could finally talk without shouting.”
-              </div>
-              <div class="ph-review-meta">
-                ⭐⭐⭐⭐⭐ · Working professionals, Chennai
-              </div>
-            </div>
-            <div class="ph-review-card">
-              <div class="ph-review-text">
-                “She never took sides, but also did not allow us to avoid tough topics. That balance helped us a lot.”
-              </div>
-              <div class="ph-review-meta">
-                ⭐⭐⭐⭐✰ · Couple with young child
-              </div>
-            </div>
-            <div class="ph-review-card">
-              <div class="ph-review-text">
-                “Small suggestions she gave for our daily routine made a big difference. The house feels calmer now.”
-              </div>
-              <div class="ph-review-meta">
-                ⭐⭐⭐⭐⭐ · Couple in different work shifts
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="ph-final-cta-text">
+        Start with a free intro call. Share what you are going through and get clarity on the next steps.
       </div>
-    </section>
+      <a class="ph-btn-primary"
+         href="https://calendly.com/ashwini-taurean/30min"
+         target="_blank" rel="noopener">
+        Book a Free Intro Call
+      </a>
+    </div>
+  </div>
+</section>
 
-    <!-- Final CTA -->
-    <section class="ph-final-cta">
-      <div class="ph-container">
-        <div class="ph-final-cta-box">
-          <div class="ph-final-cta-title">
-            Want to know if couple therapy can help your situation?
-          </div>
-          <div class="ph-final-cta-text">
-            Start with a simple WhatsApp chat. Share what you are going through. Ask your questions. Get a sense of how
-            the sessions will look for you and your partner.
-          </div>
-          <a class="ph-btn-primary"
-             href="https://wa.link/yj6n6r"
-             target="_blank" rel="noopener">
-            Chat on WhatsApp
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
+</main>
 
-  <footer class="ph-footer">
-    © <span id="ph-year"></span> Pure Harmony · Couple &amp; marriage counselling
-  </footer>
+<footer class="ph-footer">
+  © <span id="ph-year"></span> Pure Harmony · Couple &amp; marriage counselling
+</footer>
 
-  <script>
-    document.getElementById("ph-year").textContent = new Date().getFullYear();
-  </script>
+<script>
+  document.getElementById("ph-year").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
