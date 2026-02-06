@@ -44,7 +44,7 @@
     a { text-decoration: none; color: inherit; }
 
     .ph-container {
-      width: min(1120px, 100% - 3rem);
+      width: min(760px, 100% - 2rem);
       margin: 0 auto;
     }
 
@@ -79,36 +79,9 @@
       line-height: 1.4;
     }
 
-    /* Hero */
+    /* Hero (text-first) */
     .ph-hero {
-      padding: 28px 0 32px;
-    }
-
-    .ph-hero-inner {
-      display: grid;
-      grid-template-columns: 1.1fr 1.1fr;
-      gap: 28px;
-      align-items: center;
-    }
-
-    .ph-hero-image-wrap {
-      background: linear-gradient(135deg, rgba(243,166,13,.1), rgba(85,191,249,.12));
-      border-radius: 26px;
-      padding: 18px;
-      box-shadow: var(--shadow-soft);
-    }
-
-    .ph-hero-image-inner {
-      background: #ffffff;
-      border-radius: 20px;
-      padding: 14px;
-      border: 1px solid var(--color-border);
-    }
-
-    .ph-hero-image-inner img {
-      width: 100%;
-      border-radius: 16px;
-      object-fit: cover;
+      padding: 42px 0 36px;
     }
 
     .ph-hero-tag {
@@ -120,15 +93,15 @@
     }
 
     .ph-hero-title {
-      font-size: 2.1rem;
+      font-size: 2.2rem;
       line-height: 1.2;
-      margin-bottom: 10px;
+      margin: 0 0 10px;
     }
 
     .ph-hero-subtitle {
-      font-size: 0.98rem;
+      font-size: 1rem;
       color: var(--color-muted);
-      margin-bottom: 14px;
+      margin-bottom: 18px;
     }
 
     /* Mini Ashwini strip */
@@ -140,7 +113,7 @@
       border: 1px solid var(--color-border);
       border-radius: 14px;
       padding: 8px 12px;
-      margin-bottom: 16px;
+      margin-bottom: 18px;
       width: fit-content;
     }
 
@@ -162,10 +135,18 @@
       font-weight: 600;
     }
 
+    .ph-hero-benefits {
+      font-size: 0.95rem;
+      margin-bottom: 18px;
+    }
+
     .ph-hero-benefits ul {
       padding-left: 1.1rem;
       margin-top: 6px;
-      font-size: 0.9rem;
+    }
+
+    .ph-hero-benefits li {
+      margin-bottom: 4px;
     }
 
     .ph-btn-primary {
@@ -176,14 +157,13 @@
       font-weight: 600;
       color: #111827;
       box-shadow: 0 10px 25px rgba(15,23,42,.18);
-      margin-top: 14px;
     }
 
     .ph-cta-helper {
       font-size: 0.85rem;
       color: var(--color-muted);
       margin-top: 6px;
-      max-width: 360px;
+      max-width: 420px;
     }
 
     /* Ashwini section */
@@ -192,7 +172,7 @@
       grid-template-columns: auto 1fr;
       gap: 18px;
       align-items: center;
-      padding: 20px 0;
+      padding: 28px 0;
     }
 
     .ph-ashwini-photo img {
@@ -216,7 +196,7 @@
 
     /* Final CTA */
     .ph-final-cta {
-      padding: 26px 0 32px;
+      padding: 26px 0 36px;
     }
 
     .ph-final-cta-box {
@@ -234,17 +214,19 @@
       padding: 14px 0 18px;
     }
 
-    @media (max-width: 900px) {
-      .ph-hero-inner,
-      .ph-ashwini {
-        grid-template-columns: 1fr;
-      }
+    @media (max-width: 720px) {
       .ph-header-inner {
         flex-direction: column;
         align-items: flex-start;
       }
       .ph-header-tagline {
         text-align: left;
+      }
+      .ph-hero-title {
+        font-size: 1.8rem;
+      }
+      .ph-ashwini {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -269,51 +251,42 @@
 <main>
 
 <section class="ph-hero">
-  <div class="ph-container ph-hero-inner">
+  <div class="ph-container">
 
-    <div class="ph-hero-image-wrap">
-      <div class="ph-hero-image-inner">
-        <img src="assets/img/couple-therapy-ashwini.jpg" alt="Couple counselling session">
+    <div class="ph-hero-tag">Couple &amp; marriage counselling</div>
+
+    <h1 class="ph-hero-title">
+      Feeling stuck in your marriage?
+    </h1>
+
+    <p class="ph-hero-subtitle">
+      When conversations keep turning into arguments or silence, couple therapy can offer
+      a calm, structured way to understand each other better.
+    </p>
+
+    <div class="ph-hero-ashwini">
+      <img src="assets/img/ashwini-rao.jpeg" alt="Ashwini Rao, Founder of Pure Harmony">
+      <div class="ph-hero-ashwini-text">
+        <strong>Ashwini Rao</strong>
+        Founder, Pure Harmony · Counselling Psychologist
       </div>
     </div>
 
-    <div>
-      <div class="ph-hero-tag">Couple &amp; marriage counselling</div>
+    <div class="ph-hero-benefits">
+      In your sessions with Ashwini, you will:
+      <ul>
+        <li>Talk without constant fights or blame</li>
+        <li>Understand what is really hurting both of you</li>
+        <li>Learn healthier ways to communicate</li>
+        <li>Work towards rebuilding connection and respect</li>
+      </ul>
+    </div>
 
-      <h1 class="ph-hero-title">
-        Feeling stuck in your marriage?<br>
-        Talk it through with Ashwini Rao
-      </h1>
-
-      <p class="ph-hero-subtitle">
-        If conversations keep turning into arguments or silence, couple therapy offers a calm,
-        structured way to understand each other better.
-      </p>
-
-      <div class="ph-hero-ashwini">
-        <img src="assets/img/ashwini-rao.jpeg" alt="Ashwini Rao, Founder of Pure Harmony">
-        <div class="ph-hero-ashwini-text">
-          <strong>Ashwini Rao</strong>
-          Founder, Pure Harmony · Counselling Psychologist
-        </div>
-      </div>
-
-      <div class="ph-hero-benefits">
-        In your sessions, you will:
-        <ul>
-          <li>Talk without constant fights or blame</li>
-          <li>Understand what is actually hurting both of you</li>
-          <li>Learn healthier ways to communicate</li>
-          <li>Work towards rebuilding connection and respect</li>
-        </ul>
-      </div>
-
-      <a class="ph-btn-primary" href="https://wa.link/yj6n6r" target="_blank">
-        Message Ashwini on WhatsApp
-      </a>
-      <div class="ph-cta-helper">
-        Share what you are going through and ask your questions about therapy.
-      </div>
+    <a class="ph-btn-primary" href="https://wa.link/yj6n6r" target="_blank">
+      Message Ashwini on WhatsApp
+    </a>
+    <div class="ph-cta-helper">
+      Share what you are going through, ask your questions, and understand if therapy is the right next step.
     </div>
 
   </div>
@@ -330,12 +303,12 @@
       <strong>8+ years of experience</strong> working closely with Indian couples, individuals, and families.
     </p>
     <p>
-      She holds an <strong>M.Phil. in Psychology</strong> and focuses on marriage counselling,
+      She holds an <strong>M.Phil. in Psychology</strong> and specialises in marriage counselling,
       communication breakdowns, trust issues, emotional transitions, and self-esteem concerns.
     </p>
     <p>
-      Her approach is calm, non-judgemental, and practical. The goal is to help both partners slow down,
-      understand what is happening beneath the conflicts, and move forward at a pace that feels safe.
+      Her approach is calm, non-judgemental, and practical. The focus is not on blame,
+      but on understanding what is happening beneath the conflict and moving forward safely.
     </p>
     <div class="ph-language-pill">
       Languages: English · Tamil · Kannada · Tulu
