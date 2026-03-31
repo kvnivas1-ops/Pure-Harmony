@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Online Marriage Counselling | Pure Harmony</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Online couple and marriage counselling with psychologist Ashwini Rao. A calm, structured space to understand your relationship and move forward with clarity. Start with a WhatsApp conversation.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Quicksand:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <style>
+    :root {
+      --color-brand-yellow: #F3A60D;
+      --color-brand-cyan: #55BFF9;
+      --color-brand-lilac: #BDACCF;
+      --color-primary: #111827;
+      --color-muted: #6B7280;
+      --color-bg: #F9FAFB;
+      --color-border: #E5E7EB;
+      --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.10);
+      --radius-lg: 22px;
+      --radius-md: 12px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Quicksand", system-ui, sans-serif !important;
+      background-color: var(--color-bg);
+      color: var(--color-primary);
+      line-height: 1.6;
+    }
+
+    h1, h2, h3, .ph-logo-text {
+      font-family: "Instrument Serif", serif !important;
+    }
+
+    .ph-container {
+      width: min(1120px, 100% - 3rem);
+      margin: 0 auto;
+    }
+
+    .ph-header {
+      padding: 14px 0;
+      background: #fff;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .ph-header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .ph-logo img { height: 32px; }
+
+    .ph-hero { padding: 32px 0; }
+
+    .ph-hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .ph-hero-image-inner img {
+      width: 100%;
+      border-radius: 16px;
+    }
+
+    .ph-hero-title {
+      font-size: 2.1rem;
+      margin-bottom: 10px;
+    }
+
+    .ph-hero-subtitle {
+      color: var(--color-muted);
+      margin-bottom: 12px;
+    }
+
+    .ph-btn-primary {
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--color-brand-yellow), var(--color-brand-cyan));
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .ph-section { padding: 28px 0; }
+
+    .ph-section-title {
+      font-size: 1.2rem;
+      margin-bottom: 6px;
+    }
+
+    .ph-footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--color-muted);
+      padding: 20px 0;
+    }
+
+    @media (max-width: 900px) {
+      .ph-hero-inner { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="ph-header">
+  <div class="ph-container ph-header-inner">
+    <div class="ph-logo">
+      <img src="assets/img/logo.png" alt="Pure Harmony logo">
+      <span class="ph-logo-text">Pure Harmony</span>
+    </div>
+    <div style="font-size:0.85rem;color:#6B7280;">
+      Online couple & marriage counselling
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="ph-hero">
+  <div class="ph-container ph-hero-inner">
+
+    <div class="ph-hero-image-inner">
+      <img src="assets/img/couple-therapy-ashwini.jpg" alt="Couple therapy session">
+    </div>
+
+    <div>
+      <h1 class="ph-hero-title">
+        Online marriage counselling, approached with care and clarity
+      </h1>
+
+      <p class="ph-hero-subtitle">
+        If conversations are turning into repeated arguments or distance, therapy offers a structured,
+        calm space to understand what is happening and how to move forward.
+      </p>
+
+      <p>
+        You will be working directly with <strong>Ashwini Rao</strong>, counselling psychologist
+        with over 8 years of experience.
+      </p>
+
+      <p style="color:#374151;">
+        All sessions are conducted online. Available across India and for Indians living abroad.
+      </p>
+
+      <a class="ph-btn-primary" href="https://wa.link/yj6n6r" target="_blank">
+        Chat on WhatsApp
+      </a>
+
+      <p style="font-size:0.85rem;color:#6B7280;margin-top:8px;">
+        Start with a simple conversation. Share your situation and understand if this approach is suitable for you.
+      </p>
+
+      <p style="font-size:0.85rem;color:#6B7280;">
+        We take on a limited number of clients, based on where we believe we can offer meaningful support.
+      </p>
+
+    </div>
+  </div>
+</section>
+
+<section class="ph-section">
+  <div class="ph-container">
+    <h2 class="ph-section-title">You will be working with Ashwini</h2>
+
+    <p>
+      <strong>Ashwini Rao</strong> is a counselling psychologist with over 8 years of experience,
+      working with individuals and couples within the Indian context.
+    </p>
+
+    <p>
+      She holds an M.Phil. in Psychology and works with relationship concerns, communication difficulties,
+      emotional distance, trust issues, and family transitions.
+    </p>
+
+    <p>
+      Her approach is calm, structured, and grounded. The focus is not on assigning blame,
+      but on helping both individuals understand what is happening and how to move forward with clarity.
+    </p>
+  </div>
+</section>
+
+<section class="ph-section">
+  <div class="ph-container">
+    <h2 class="ph-section-title">A simpler way to begin</h2>
+
+    <p>
+      You don’t need to fill out long forms or go through multiple therapist profiles.
+    </p>
+
+    <p>
+      You can start with a WhatsApp conversation, briefly share what you are going through,
+      and have a short interaction to understand if this process will be useful for you.
+    </p>
+
+    <p>
+      If it feels like the right fit, you can proceed with booking a session.
+    </p>
+  </div>
+</section>
+
+<section class="ph-section">
+  <div class="ph-container">
+    <h2 class="ph-section-title">What this process focuses on</h2>
+
+    <p>
+      The work focuses on understanding patterns, improving communication,
+      and building a more stable way of relating to each other.
+    </p>
+  </div>
+</section>
+
+<section class="ph-section">
+  <div class="ph-container">
+    <h2 class="ph-section-title">Want to understand if this is right for you?</h2>
+
+    <p style="color:#6B7280;">
+      You can start with a simple conversation. Share your situation, ask your questions,
+      and take a call on whether to proceed.
+    </p>
+
+    <a class="ph-btn-primary" href="https://wa.link/yj6n6r" target="_blank">
+      Chat on WhatsApp
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer class="ph-footer">
+  © <span id="ph-year"></span> Pure Harmony
+</footer>
+
+<script>
+  document.getElementById("ph-year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
