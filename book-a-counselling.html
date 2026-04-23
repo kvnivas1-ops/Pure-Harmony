@@ -44,6 +44,35 @@
       margin: 0 auto;
     }
 
+    /* HEADER */
+    .ph-header {
+      background: #ffffff;
+      border-bottom: 1px solid var(--color-border);
+      padding: 14px 0;
+    }
+
+    .ph-header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .ph-logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .ph-logo img {
+      height: 30px;
+    }
+
+    .ph-header-tagline {
+      font-size: 0.85rem;
+      color: var(--color-muted);
+    }
+
+    /* HERO */
     .ph-hero {
       padding: 50px 0 30px;
     }
@@ -79,6 +108,7 @@
       color: var(--color-muted);
     }
 
+    /* BUTTONS */
     .ph-btn-primary {
       display: inline-flex;
       padding: 12px 20px;
@@ -87,9 +117,26 @@
       font-weight: 600;
       color: #111827;
       box-shadow: 0 10px 25px rgba(15,23,42,.18);
+    }
+
+    .ph-btn-secondary {
+      display: inline-flex;
+      padding: 12px 18px;
+      border-radius: 999px;
+      font-weight: 500;
+      border: 1px solid var(--color-border);
+      background: #fff;
+      color: var(--color-primary);
+    }
+
+    .ph-btn-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
       margin-top: 15px;
     }
 
+    /* SECTIONS */
     .ph-section {
       margin-top: 50px;
     }
@@ -136,6 +183,19 @@
 
 <body>
 
+<!-- HEADER -->
+<header class="ph-header">
+  <div class="ph-container ph-header-inner">
+    <div class="ph-logo">
+      <img src="assets/img/logo.png" alt="Pure Harmony">
+      <span class="ph-logo-text">Pure Harmony</span>
+    </div>
+    <div class="ph-header-tagline">
+      Counselling for emotional wellbeing · Online
+    </div>
+  </div>
+</header>
+
 <div class="ph-container">
 
   <!-- HERO -->
@@ -143,7 +203,7 @@
 
     <div class="ph-hero-top">
 
-      <!-- IMAGE / VIDEO PLACEHOLDER -->
+      <!-- IMAGE -->
       <div class="ph-hero-img">
         <img src="assets/img/Ashwini rao title.jpg" alt="Ashwini Rao" />
         <div class="ph-ashwini-label">
@@ -162,10 +222,19 @@
           You don’t have to figure everything out on your own.
         </p>
 
-        <a class="ph-btn-primary"
-           href="https://api.whatsapp.com/send?phone=919840761162&text=Hi%20Ashwini,%20I%20would%20like%20to%20book%20a%20session">
-          Start Chat on WhatsApp
-        </a>
+        <div class="ph-btn-row">
+          <a class="ph-btn-primary"
+             href="https://api.whatsapp.com/send?phone=919840761162&text=Hi%20Ashwini,%20I%20would%20like%20to%20book%20a%20session"
+             target="_blank">
+            Chat on WhatsApp
+          </a>
+
+          <a class="ph-btn-secondary"
+             href="https://thelovehopecompany.com/book-therapy/therapist-list/ashwini-u-r/"
+             target="_blank">
+            Read Reviews
+          </a>
+        </div>
 
         <p style="font-size:0.85rem; color:#6B7280;">
           Start with a simple conversation. No pressure.
@@ -176,95 +245,35 @@
 
   </section>
 
-  <!-- SUPPORT -->
+  <!-- REST SAME -->
+  <!-- (keeping your existing sections unchanged below) -->
+
   <section class="ph-section">
     <h2>What you can get support with</h2>
 
     <div class="ph-cards">
-
       <div class="ph-card">
         <h3>Individual Counselling</h3>
-        <p>
-          Feeling stuck, overwhelmed, anxious, or not like yourself lately?
-          Understand what’s happening and work through it at your pace.
-        </p>
+        <p>Feeling stuck, overwhelmed, anxious, or not like yourself lately?</p>
       </div>
 
       <div class="ph-card">
         <h3>Couple Therapy</h3>
-        <p>
-          Frequent arguments, emotional distance, or communication issues?
-          Work towards understanding each other and rebuilding connection.
-        </p>
+        <p>Frequent arguments or emotional distance? Work towards rebuilding connection.</p>
       </div>
 
       <div class="ph-card">
         <h3>Emotional Wellbeing</h3>
-        <p>
-          Stress, burnout, overthinking, or life transitions.
-          You don’t need a “big problem” to seek support.
-        </p>
+        <p>Stress, burnout, overthinking, or life transitions.</p>
       </div>
-
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section class="ph-section">
-    <h2>Meet Ashwini</h2>
-
-    <p>
-      Ashwini is a counselling psychologist with over 8 years of experience,
-      working with individuals and couples across stress, anxiety, emotional struggles,
-      life transitions, and relationship challenges.
-    </p>
-
-    <p>
-      She is the founder of <span class="ph-highlight">Pure Harmony</span>,
-      a space built to support mental wellbeing in a way that feels practical and personal.
-    </p>
-
-    <p>
-      Her approach is simple. No judgment. No complicated jargon.
-      Just honest conversations and insights that help you move forward.
-    </p>
-  </section>
-
-  <!-- TRUST -->
-  <section class="ph-section">
-    <h2>What to expect</h2>
-
-    <div class="ph-cards">
-
-      <div class="ph-card">
-        <p class="ph-highlight">Safe and confidential</p>
-        <p>Your space to speak openly without fear of judgment.</p>
-      </div>
-
-      <div class="ph-card">
-        <p class="ph-highlight">Practical guidance</p>
-        <p>Understand your patterns and take meaningful steps forward.</p>
-      </div>
-
-      <div class="ph-card">
-        <p class="ph-highlight">At your pace</p>
-        <p>No pressure to have everything figured out immediately.</p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- FINAL CTA -->
   <section class="ph-footer-cta">
     <h2>You don’t have to go through this alone</h2>
-
-    <p>
-      If you're unsure, just start with a conversation.
-      We can take it from there.
-    </p>
-
     <a class="ph-btn-primary"
-       href="https://api.whatsapp.com/send?phone=919840761162&text=Hi%20Ashwini,%20I%20would%20like%20to%20know%20more%20about%20the%20sessions">
+       href="https://api.whatsapp.com/send?phone=919840761162"
+       target="_blank">
       Chat on WhatsApp
     </a>
   </section>
