@@ -10,6 +10,165 @@
 
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  /* Featured Psychologist Card */
+
+.ashwini-feature-card {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    padding: 40px;
+    margin: 35px 0;
+
+    background: linear-gradient(
+        135deg,
+        #f8fbfa 0%,
+        #eef7f4 100%
+    );
+
+    border: 1px solid #d9ebe4;
+    border-radius: 24px;
+
+    box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+}
+
+.ashwini-content {
+    flex: 1;
+}
+
+.ashwini-tag {
+    display: inline-block;
+
+    background: #e8f5ef;
+    color: #2d6b58;
+
+    padding: 8px 14px;
+    border-radius: 999px;
+
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    margin-bottom: 16px;
+}
+
+.ashwini-feature-card h2 {
+    margin-bottom: 8px;
+    color: #162033;
+}
+
+.ashwini-role {
+    color: #667085;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.ashwini-feature-card p {
+    line-height: 1.8;
+}
+
+.ashwini-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 24px 0;
+}
+
+.ashwini-highlights span {
+    background: #fff;
+    border: 1px solid #d9ebe4;
+
+    padding: 8px 14px;
+    border-radius: 999px;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    color: #344054;
+}
+
+.whatsapp-pill-btn {
+    display: inline-block;
+
+    background: linear-gradient(
+        90deg,
+        #e5aa1d 0%,
+        #67bce8 100%
+    );
+
+    color: #13233d;
+    text-decoration: none;
+
+    font-size: 1.05rem;
+    font-weight: 700;
+
+    padding: 18px 36px;
+    border-radius: 999px;
+
+    transition: all 0.3s ease;
+}
+
+.whatsapp-pill-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.12);
+}
+
+.cta-description {
+    margin-top: 16px;
+    max-width: 520px;
+
+    color: #6b7280;
+}
+
+/* Circular Photo */
+
+.ashwini-image {
+    flex: 0 0 240px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ashwini-image img {
+    width: 220px;
+    height: 220px;
+
+    object-fit: cover;
+    border-radius: 50%;
+
+    border: 6px solid #ffffff;
+
+    box-shadow:
+        0 0 0 8px #e8f5ef,
+        0 15px 35px rgba(0,0,0,0.12);
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .ashwini-feature-card {
+        flex-direction: column;
+        gap: 25px;
+        padding: 25px;
+    }
+
+    .ashwini-image {
+        flex: none;
+    }
+
+    .ashwini-image img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .whatsapp-pill-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
 </head>
 
 <body>
@@ -72,8 +231,7 @@
         </p>
 
         <p>
-            She conducts sessions in
-            <strong>English, Tamil, Tulu, and Kannada</strong>,
+            She conducts sessions in <strong>English, Tamil, Tulu, and Kannada</strong>,
             and maintains a <strong>100% patient satisfaction rate from over 350 clients.</strong>
         </p>
 
@@ -91,15 +249,17 @@
         </a>
 
         <p class="cta-description">
-            Share what you're going through, ask questions about therapy,
-            and get a clear idea of how the sessions work.
+            Share what you're going through, ask questions about therapy, and get a clear idea of how the sessions work.
         </p>
 
     </div>
 
     <div class="ashwini-image">
-        <img src="../assets/img/ashwini-rao.jpeg" alt="Ashwini Rao Counseling Psychologist">
+        <img src="../assets/img/ashwini-rao.jpeg"
+             alt="Ashwini Rao Counseling Psychologist">
     </div>
+
+</div>
 
 </div>
   <hr>
@@ -779,142 +939,3 @@ The search process shouldn't overwhelm you. Start by identifying your main conce
 
 </body>
 </html>
-
-.ashwini-feature-card {
-    display: flex;
-    gap: 40px;
-    align-items: center;
-
-    padding: 40px;
-    margin: 35px 0;
-
-    background: linear-gradient(
-        135deg,
-        #f7fbfa 0%,
-        #eef7f4 100%
-    );
-
-    border: 1px solid #d8ebe3;
-    border-radius: 24px;
-
-    box-shadow: 0 8px 30px rgba(0,0,0,0.06);
-}
-
-.ashwini-content {
-    flex: 1;
-}
-
-.ashwini-tag {
-    display: inline-block;
-
-    background: #e8f5ef;
-    color: #2c6b57;
-
-    padding: 8px 14px;
-    border-radius: 999px;
-
-    font-size: 0.85rem;
-    font-weight: 600;
-
-    margin-bottom: 18px;
-}
-
-.ashwini-feature-card h2 {
-    margin-bottom: 8px;
-    color: #182338;
-}
-
-.ashwini-role {
-    color: #667085;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-.ashwini-feature-card p {
-    line-height: 1.8;
-}
-
-.ashwini-highlights {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin: 24px 0;
-}
-
-.ashwini-highlights span {
-    background: white;
-    border: 1px solid #d9e9e3;
-
-    padding: 8px 14px;
-    border-radius: 999px;
-
-    font-size: 0.9rem;
-    font-weight: 600;
-}
-
-.whatsapp-pill-btn {
-    display: inline-block;
-
-    background: linear-gradient(
-        90deg,
-        #e3a81d 0%,
-        #69bde7 100%
-    );
-
-    color: #13233d;
-    text-decoration: none;
-
-    font-weight: 700;
-    font-size: 1.1rem;
-
-    padding: 18px 34px;
-    border-radius: 999px;
-
-    margin-top: 10px;
-
-    transition: all .3s ease;
-}
-
-.whatsapp-pill-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 25px rgba(0,0,0,.12);
-}
-
-.cta-description {
-    margin-top: 16px;
-    color: #6b7280;
-    max-width: 500px;
-}
-
-.ashwini-image {
-    flex: 0 0 280px;
-}
-
-.ashwini-image img {
-    width: 100%;
-    height: auto;
-
-    border-radius: 20px;
-
-    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
-    object-fit: cover;
-}
-
-@media (max-width: 768px) {
-
-    .ashwini-feature-card {
-        flex-direction: column-reverse;
-        padding: 25px;
-        gap: 25px;
-    }
-
-    .ashwini-image {
-        width: 100%;
-        max-width: 280px;
-    }
-
-    .whatsapp-pill-btn {
-        width: 100%;
-        text-align: center;
-    }
-}
