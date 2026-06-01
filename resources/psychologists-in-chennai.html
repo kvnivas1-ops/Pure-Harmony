@@ -779,3 +779,142 @@ The search process shouldn't overwhelm you. Start by identifying your main conce
 
 </body>
 </html>
+
+.ashwini-feature-card {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+
+    padding: 40px;
+    margin: 35px 0;
+
+    background: linear-gradient(
+        135deg,
+        #f7fbfa 0%,
+        #eef7f4 100%
+    );
+
+    border: 1px solid #d8ebe3;
+    border-radius: 24px;
+
+    box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+}
+
+.ashwini-content {
+    flex: 1;
+}
+
+.ashwini-tag {
+    display: inline-block;
+
+    background: #e8f5ef;
+    color: #2c6b57;
+
+    padding: 8px 14px;
+    border-radius: 999px;
+
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    margin-bottom: 18px;
+}
+
+.ashwini-feature-card h2 {
+    margin-bottom: 8px;
+    color: #182338;
+}
+
+.ashwini-role {
+    color: #667085;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.ashwini-feature-card p {
+    line-height: 1.8;
+}
+
+.ashwini-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 24px 0;
+}
+
+.ashwini-highlights span {
+    background: white;
+    border: 1px solid #d9e9e3;
+
+    padding: 8px 14px;
+    border-radius: 999px;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.whatsapp-pill-btn {
+    display: inline-block;
+
+    background: linear-gradient(
+        90deg,
+        #e3a81d 0%,
+        #69bde7 100%
+    );
+
+    color: #13233d;
+    text-decoration: none;
+
+    font-weight: 700;
+    font-size: 1.1rem;
+
+    padding: 18px 34px;
+    border-radius: 999px;
+
+    margin-top: 10px;
+
+    transition: all .3s ease;
+}
+
+.whatsapp-pill-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(0,0,0,.12);
+}
+
+.cta-description {
+    margin-top: 16px;
+    color: #6b7280;
+    max-width: 500px;
+}
+
+.ashwini-image {
+    flex: 0 0 280px;
+}
+
+.ashwini-image img {
+    width: 100%;
+    height: auto;
+
+    border-radius: 20px;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+
+    .ashwini-feature-card {
+        flex-direction: column-reverse;
+        padding: 25px;
+        gap: 25px;
+    }
+
+    .ashwini-image {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .whatsapp-pill-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
