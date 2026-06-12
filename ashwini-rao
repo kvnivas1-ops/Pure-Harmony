@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ashwini Rao | Marital & Relationship Counselor | Pure Harmony</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta
+    name="description"
+    content="Meet Ashwini Rao, M.Phil. Psychologist, Ph.D. Candidate, Professor and Marital Counselor with over 8 years of experience helping individuals and couples build healthier lives and relationships."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital,wght@0,400;0,600;1,400&family=Quicksand:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container navbar">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/img/logo.png" alt="Pure Harmony logo">
+      <span class="nav-logo-text">Pure Harmony Counseling</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="therapists.html" class="active">Therapists</a>
+      <a href="resources.html">Resources</a>
+      <a href="book.html">Book a Session</a>
+      <a href="tel:+919840761162" class="btn-outline">
+        Call: +91-9840761162
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="section">
+  <div class="container two-column">
+
+    <div>
+      <div class="hero-badge">
+        M.Phil. Psychology • Ph.D. Candidate • Marital Counselor
+      </div>
+
+      <h1 class="hero-title">
+        Meet Ashwini Rao
+      </h1>
+
+      <p class="hero-subtitle">
+        Helping individuals and couples build healthier relationships,
+        improve emotional well-being, and navigate life's challenges
+        with confidence and clarity.
+      </p>
+
+      <p>
+        With more than eight years of experience in counseling and mental
+        health, Ashwini combines evidence-based therapy with a warm,
+        practical approach that helps clients create meaningful change.
+      </p>
+
+      <div class="hero-actions">
+        <a href="book.html" class="btn">
+          Book a Session
+        </a>
+
+        <a href="tel:+919840761162" class="btn btn-outline">
+          Call Now
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <img
+        src="assets/img/Ashwini rao title.jpg"
+        alt="Ashwini Rao"
+        class="profile-image"
+      >
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <div class="credentials-grid">
+
+      <div class="credential-card">
+        <strong>8+</strong>
+        Years of Experience
+      </div>
+
+      <div class="credential-card">
+        <strong>25+</strong>
+        Research Publications
+      </div>
+
+      <div class="credential-card">
+        <strong>M.Phil.</strong>
+        Psychology
+      </div>
+
+      <div class="credential-card">
+        <strong>Ph.D.</strong>
+        Candidate
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <div class="section-header">
+      <h2 class="section-title">
+        A Therapist, Educator and Researcher
+      </h2>
+    </div>
+
+    <p>
+      Ashwini Rao brings together academic excellence and clinical
+      experience to provide thoughtful, evidence-based support for
+      individuals, couples, and families.
+    </p>
+
+    <p>
+      Alongside her counseling work, she serves as a professor,
+      mentor, researcher, and published author. Her academic
+      background allows her to stay closely connected to current
+      developments in psychology while maintaining a practical,
+      client-centered approach to therapy.
+    </p>
+
+    <p>
+      She believes therapy should be a collaborative process where
+      clients feel understood, supported, and empowered to create
+      lasting positive change in their lives.
+    </p>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <div class="section-header">
+      <h2 class="section-title">
+        Specialization in Marital & Relationship Counseling
+      </h2>
+
+      <p class="section-subtitle">
+        Helping couples strengthen connection, communication and trust.
+      </p>
+    </div>
+
+    <div class="cards-grid">
+
+      <article class="card">
+        <h3>Couples Therapy</h3>
+
+        <ul>
+          <li>Communication difficulties</li>
+          <li>Recurring conflicts and arguments</li>
+          <li>Emotional disconnection</li>
+          <li>Trust concerns</li>
+          <li>Relationship dissatisfaction</li>
+          <li>Parenting-related stress</li>
+          <li>Family and in-law conflicts</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>Premarital Counseling</h3>
+
+        <ul>
+          <li>Relationship readiness</li>
+          <li>Communication skills</li>
+          <li>Conflict management</li>
+          <li>Expectations and values</li>
+          <li>Family dynamics</li>
+          <li>Long-term relationship planning</li>
+        </ul>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <div class="section-header">
+      <h2 class="section-title">
+        Individual Counseling
+      </h2>
+    </div>
+
+    <div class="cards-grid">
+
+      <article class="card">
+        <h3>Areas of Support</h3>
+
+        <ul>
+          <li>Anxiety and stress</li>
+          <li>Depression and low mood</li>
+          <li>Self-esteem concerns</li>
+          <li>Career and workplace stress</li>
+          <li>Life transitions</li>
+          <li>Emotional regulation difficulties</li>
+          <li>Relationship challenges</li>
+          <li>Personal growth and self-discovery</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>Therapeutic Approach</h3>
+
+        <p>
+          Every client is unique. Therapy is tailored to your
+          personal circumstances, goals, and challenges.
+        </p>
+
+        <p>
+          Sessions focus on understanding patterns, building
+          emotional awareness, developing coping strategies,
+          and creating meaningful change.
+        </p>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <div class="section-header">
+      <h2 class="section-title">
+        Academic Excellence
+      </h2>
+    </div>
+
+    <div class="card">
+
+      <ul>
+        <li>M.Phil. in Psychology</li>
+        <li>Ph.D. Candidate</li>
+        <li>Professor and Academic Mentor</li>
+        <li>Published Author</li>
+        <li>25+ Research Papers in Mental Health & Psychology</li>
+      </ul>
+
+      <p>
+        Ashwini's academic work strengthens her therapeutic practice,
+        ensuring that clients benefit from approaches grounded in both
+        scientific research and real-world counseling experience.
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container center-cta">
+
+    <div class="section-header">
+      <h2 class="section-title">
+        Begin Your Journey Toward Healing & Growth
+      </h2>
+
+      <p class="section-subtitle">
+        Whether you're seeking support for yourself, your relationship,
+        or your family, taking the first step can make all the difference.
+      </p>
+    </div>
+
+    <div class="hero-actions">
+      <a href="book.html" class="btn">
+        Book a Session
+      </a>
+
+      <a href="tel:+919840761162" class="btn btn-outline">
+        Call +91-9840761162
+      </a>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>
+      © <span id="year"></span> Pure Harmony Counseling.
+      All rights reserved.
+    </span>
+
+    <span>
+      For appointments:
+      <a href="tel:+919840761162">+91-9840761162</a>
+    </span>
+  </div>
+</footer>
+
+<script>
+document.getElementById('year').textContent =
+new Date().getFullYear();
+</script>
+
+</body>
+</html>
