@@ -991,4 +991,135 @@ html {
         text-align: center;
     }
 }
+/* ============================================================
+   COUPLE THERAPY PAGE
+   ============================================================ */
 
+.ct-center { text-align: center; }
+
+.ct-narrow {
+  max-width: 780px;
+}
+
+.ct-tint {
+  background: linear-gradient(180deg, #fbfdfc 0%, #f4faf7 100%);
+}
+
+/* ---------- Hero ---------- */
+
+.ct-hero {
+  background: linear-gradient(135deg, #f9d79a 0%, #e7c6e8 48%, #a8c8ff 100%);
+  padding: 0;
+}
+
+.ct-hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 70px 20px 64px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);
+  gap: 48px;
+  align-items: center;
+}
+
+.ct-hero-title {
+  font-family: "Instrument Serif", serif;
+  font-size: 54px;
+  line-height: 1.1;
+  font-weight: 400;
+  color: #141414;
+  margin: 0 0 20px;
+}
+
+.ct-hero-sub {
+  font-family: "Quicksand", sans-serif;
+  font-size: 19px;
+  line-height: 1.7;
+  color: #33383d;
+  margin: 0 0 24px;
+  max-width: 560px;
+}
+
+.ct-hero-points {
+  list-style: none;
+  margin: 0 0 30px;
+  padding: 0;
+  font-size: 16px;
+  color: #2f3438;
+}
+
+.ct-hero-points li {
+  position: relative;
+  padding-left: 26px;
+  margin-bottom: 9px;
+}
+
+.ct-hero-points li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: 700;
+  color: #2d6b58;
+}
+
+.ct-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.ct-ghost-btn {
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1f2937;
+  border-bottom: 1px solid rgba(31, 41, 55, 0.35);
+  padding-bottom: 2px;
+}
+
+.ct-ghost-btn:hover {
+  text-decoration: none;
+  border-bottom-color: #1f2937;
+}
+
+.ct-hero-note {
+  font-size: 15px;
+  color: #46505a;
+  margin: 0;
+}
+
+/* Hero portrait */
+
+.ct-hero-figure {
+  text-align: center;
+}
+
+.ct-hero-figure img {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 16px;
+  border: 6px solid #ffffff;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.18);
+}
+
+.ct-hero-figure-caption {
+  display: flex;
+  flex-direction: column;
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
+  color: #22303f;
+}
+
+.ct-hero-figure-caption strong {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+/* ---------- Trust strip ---------- */
+
+.ct-tr
