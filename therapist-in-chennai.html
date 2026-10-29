@@ -451,6 +451,60 @@
       .ph-panel.is-on { animation: none; }
     }
   </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://pureharmony.in/#organization",
+      "name": "Pure Harmony Counseling",
+      "url": "https://pureharmony.in/",
+      "logo": "https://pureharmony.in/assets/img/logo.png",
+      "areaServed": {
+        "@type": "City",
+        "name": "Chennai"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://pureharmony.in/#website",
+      "url": "https://pureharmony.in/",
+      "name": "Pure Harmony Counseling",
+      "publisher": {
+        "@id": "https://pureharmony.in/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://pureharmony.in/therapist-in-chennai.html#webpage",
+      "url": "https://pureharmony.in/therapist-in-chennai.html",
+      "name": "Therapist in Chennai | Ashwini Rao, Counselling Psychologist",
+      "isPartOf": {
+        "@id": "https://pureharmony.in/#website"
+      },
+      "about": {
+        "@id": "https://pureharmony.in/#organization"
+      },
+      "description": "Looking for a therapist in Chennai? Ashwini Rao is a counselling psychologist with 9+ years of experience and 300+ clients supported. In person in Chennai and online. Chat on WhatsApp."
+    },
+    {
+      "@type": "Service",
+      "@id": "https://pureharmony.in/therapist-in-chennai.html#service",
+      "name": "Counselling with a therapist in Chennai",
+      "serviceType": "Counselling",
+      "provider": {
+        "@id": "https://pureharmony.in/#organization"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Chennai"
+      },
+      "url": "https://pureharmony.in/therapist-in-chennai.html"
+    }
+  ]
+}
+</script>
 </head>
 
 <body>
