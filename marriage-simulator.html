@@ -26,23 +26,26 @@
 .simulator-page .intro{display:grid;grid-template-columns:1fr .9fr;gap:36px;align-items:center}
 .simulator-page .intro h2,.simulator-page .scenario h2,.simulator-page .result h2,.simulator-page .block h3,.simulator-page .invite h3{font:400 clamp(30px,4vw,43px)/1.12 "Instrument Serif",serif;color:#111827}
 .simulator-page .intro h2{margin:12px 0}.simulator-page .muted,.simulator-page .story{color:#4B5563}
-.simulator-page .room{height:300px;border-radius:18px;position:relative;overflow:hidden;background:linear-gradient(135deg,#fff8e9 0%,#f7f7fb 55%,#edf8ff 100%);display:flex;align-items:center;justify-content:center;padding:0}
-.simulator-page .run-together{display:block;width:100%;height:100%}
-.simulator-page .runner-man{animation:sim-run-man 3.8s ease-in-out infinite}
-.simulator-page .runner-woman{animation:sim-run-woman 3.8s ease-in-out infinite}
-.simulator-page .runner-man .leg-a,.simulator-page .runner-woman .leg-a{transform-box:fill-box;transform-origin:top center;animation:sim-leg-a .42s ease-in-out infinite alternate}
-.simulator-page .runner-man .leg-b,.simulator-page .runner-woman .leg-b{transform-box:fill-box;transform-origin:top center;animation:sim-leg-b .42s ease-in-out infinite alternate}
-.simulator-page .runner-man .arm-a,.simulator-page .runner-woman .arm-a{transform-box:fill-box;transform-origin:top center;animation:sim-arm-a .42s ease-in-out infinite alternate}
-.simulator-page .runner-man .arm-b,.simulator-page .runner-woman .arm-b{transform-box:fill-box;transform-origin:top center;animation:sim-arm-b .42s ease-in-out infinite alternate}
-.simulator-page .meet-heart{transform-box:fill-box;transform-origin:center;animation:sim-heart 3.8s ease-in-out infinite}
-@keyframes sim-run-man{0%,8%{transform:translateX(-118px)}48%,78%{transform:translateX(-8px)}100%{transform:translateX(-118px)}}
-@keyframes sim-run-woman{0%,8%{transform:translateX(118px)}48%,78%{transform:translateX(8px)}100%{transform:translateX(118px)}}
-@keyframes sim-leg-a{from{transform:rotate(-25deg)}to{transform:rotate(25deg)}}
-@keyframes sim-leg-b{from{transform:rotate(25deg)}to{transform:rotate(-25deg)}}
-@keyframes sim-arm-a{from{transform:rotate(22deg)}to{transform:rotate(-25deg)}}
-@keyframes sim-arm-b{from{transform:rotate(-25deg)}to{transform:rotate(22deg)}}
-@keyframes sim-heart{0%,42%,82%,100%{opacity:0;transform:scale(.4) translateY(8px)}50%,72%{opacity:1;transform:scale(1) translateY(0)}}
-@media(prefers-reduced-motion:reduce){.simulator-page .runner-man,.simulator-page .runner-woman,.simulator-page .runner-man .leg-a,.simulator-page .runner-man .leg-b,.simulator-page .runner-man .arm-a,.simulator-page .runner-man .arm-b,.simulator-page .runner-woman .leg-a,.simulator-page .runner-woman .leg-b,.simulator-page .runner-woman .arm-a,.simulator-page .runner-woman .arm-b,.simulator-page .meet-heart{animation:none!important}.simulator-page .runner-man{transform:translateX(-8px)}.simulator-page .runner-woman{transform:translateX(8px)}.simulator-page .meet-heart{opacity:1}}
+.simulator-page .room{height:300px;border-radius:18px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 88%,rgba(255,255,255,.95),transparent 48%),linear-gradient(125deg,#fff8e9 0%,#f8f5fb 52%,#edf8ff 100%);display:flex;align-items:center;justify-content:center;padding:0}
+.simulator-page .meet-illustration{display:block;width:100%;height:100%}
+.simulator-page .scene-glow{transform-origin:center;animation:scene-breathe 5.6s ease-in-out infinite}
+.simulator-page .left-person{transform-origin:210px 190px;animation:left-arrive 5.6s cubic-bezier(.2,.75,.25,1) infinite}
+.simulator-page .right-person{transform-origin:390px 190px;animation:right-arrive 5.6s cubic-bezier(.2,.75,.25,1) infinite}
+.simulator-page .left-hand{transform-origin:236px 151px;animation:left-reach 5.6s ease-in-out infinite}
+.simulator-page .right-hand{transform-origin:364px 151px;animation:right-reach 5.6s ease-in-out infinite}
+.simulator-page .connection-line{stroke-dasharray:5 9;animation:line-flow 5.6s linear infinite}
+.simulator-page .spark{transform-box:fill-box;transform-origin:center;animation:sparkle 2.8s ease-in-out infinite}
+.simulator-page .spark.s2{animation-delay:.7s}.simulator-page .spark.s3{animation-delay:1.4s}.simulator-page .spark.s4{animation-delay:2.1s}
+.simulator-page .together-heart{transform-box:fill-box;transform-origin:center;animation:heart-pop 5.6s ease-in-out infinite}
+@keyframes scene-breathe{0%,100%{transform:scale(.96);opacity:.65}50%{transform:scale(1.06);opacity:1}}
+@keyframes left-arrive{0%,12%{transform:translateX(-48px) translateY(7px)}43%,76%{transform:translateX(0) translateY(0)}100%{transform:translateX(-48px) translateY(7px)}}
+@keyframes right-arrive{0%,12%{transform:translateX(48px) translateY(7px)}43%,76%{transform:translateX(0) translateY(0)}100%{transform:translateX(48px) translateY(7px)}}
+@keyframes left-reach{0%,32%,100%{transform:rotate(-18deg)}47%,78%{transform:rotate(0)}}
+@keyframes right-reach{0%,32%,100%{transform:rotate(18deg)}47%,78%{transform:rotate(0)}}
+@keyframes line-flow{0%,35%{opacity:0;stroke-dashoffset:50}50%,76%{opacity:.9;stroke-dashoffset:0}100%{opacity:0;stroke-dashoffset:-50}}
+@keyframes sparkle{0%,100%{opacity:.25;transform:scale(.55) rotate(0)}50%{opacity:1;transform:scale(1.15) rotate(35deg)}}
+@keyframes heart-pop{0%,40%,84%,100%{opacity:0;transform:scale(.35) translateY(8px)}49%,75%{opacity:1;transform:scale(1) translateY(0)}}
+@media(prefers-reduced-motion:reduce){.simulator-page .scene-glow,.simulator-page .left-person,.simulator-page .right-person,.simulator-page .left-hand,.simulator-page .right-hand,.simulator-page .connection-line,.simulator-page .spark,.simulator-page .together-heart{animation:none!important}.simulator-page .left-person{transform:translateX(0)}.simulator-page .right-person{transform:translateX(0)}.simulator-page .together-heart{opacity:1}}
 .simulator-page .win{position:absolute;left:24px;top:20px;width:95px;height:112px;border:7px solid #fff;background:linear-gradient(#b9d7e8 0 55%,#b6c8a6 55%);border-radius:8px}
 .simulator-page .art{position:absolute;right:30px;top:32px;width:57px;height:75px;border:7px solid #fff;background:#e7c58e;border-radius:4px}
 .simulator-page .sofa{width:72%;height:82px;background:#aebbd0;border-radius:16px 16px 8px 8px;box-shadow:inset 0 -10px #8d9db7}
@@ -103,23 +106,39 @@
 <div class="screen" id="welcome"><div class="intro"><div><div class="eyebrow">Welcome home</div><h2 class="serif">Marriage is made of a thousand little moments.</h2><p class="muted">Some are easy. Others ask you to balance family, money, ambitions and the person you share your life with. Explore how you might respond.</p><p class="disclaimer">There are no perfect answers. Choose what feels most like you, not what you think is expected.</p>
 <div class="creator-note"><strong>Created by Ashwini Rao, Counselling Psychologist</strong><p>This simulation was developed by Ashwini, founder of Pure Harmony, drawing on her professional experience working with couples and careful research into the everyday situations that can shape married life. The scenarios reflect the conversations, expectations and decisions couples may encounter, especially within Indian family and cultural contexts. <a href="therapists.html">Learn about the counsellors at Pure Harmony</a>.</p></div>
 <p style="margin:18px 0 12px"><a class="btn alt" href="book.html">Book a session with Pure Harmony</a></p>
-<button class="btn" id="begin">Step inside →</button></div><div class="room couple-illustration" role="img" aria-label="A minimalist animation of two people running towards each other and meeting"><svg class="run-together" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-<path d="M42 254H558" stroke="#d9dce4" stroke-width="3" stroke-linecap="round"/>
-<circle cx="300" cy="68" r="28" fill="#F3A60D" opacity=".12"/><circle cx="300" cy="68" r="17" fill="#55BFF9" opacity=".12"/>
-<g class="runner-man" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="13">
-<circle cx="178" cy="91" r="24" fill="#F3C7A5" stroke="none"/><path d="M157 83q4-28 31-25 17 2 20 19-15-8-27-8-10 12-24 14" fill="#273449" stroke="none"/>
-<path d="M178 119v65" stroke="#55BFF9"/><path class="arm-a" d="M177 132l-25 25" stroke="#F3C7A5"/><path class="arm-b" d="M180 132l27 14" stroke="#F3C7A5"/>
-<path class="leg-a" d="M178 183l-24 37-24 5" stroke="#273449"/><path class="leg-b" d="M178 183l25 31 22 8" stroke="#273449"/>
-<path d="M121 226h19M216 226h18" stroke="#273449" stroke-width="9"/>
+<button class="btn" id="begin">Step inside →</button></div><div class="room couple-illustration" role="img" aria-label="A gentle animation showing two people coming together and forming a connection">
+<svg class="meet-illustration" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<defs><linearGradient id="ph-ground" x1="0" x2="1"><stop stop-color="#F3A60D" stop-opacity=".16"/><stop offset="1" stop-color="#55BFF9" stop-opacity=".18"/></linearGradient><linearGradient id="ph-left" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F8C65B"/><stop offset="1" stop-color="#F3A60D"/></linearGradient><linearGradient id="ph-right" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8BD5F8"/><stop offset="1" stop-color="#55BFF9"/></linearGradient></defs>
+<ellipse cx="300" cy="246" rx="188" ry="19" fill="url(#ph-ground)"/>
+<g class="scene-glow"><circle cx="300" cy="142" r="105" fill="#fff" opacity=".44"/><circle cx="300" cy="142" r="82" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="3 9" opacity=".8"/></g>
+<path class="connection-line" d="M244 151 Q300 106 356 151" fill="none" stroke="#BDACCF" stroke-width="3" stroke-linecap="round"/>
+<g class="left-person">
+<ellipse cx="208" cy="238" rx="49" ry="9" fill="#E8D9B9" opacity=".5"/>
+<path d="M168 194Q166 157 184 143Q201 130 225 143Q244 156 246 194L240 218H174Z" fill="url(#ph-left)"/>
+<path d="M181 160Q163 176 173 198" fill="none" stroke="#E89A20" stroke-width="8" stroke-linecap="round"/>
+<circle cx="205" cy="105" r="35" fill="#EFC3A1"/>
+<path d="M171 106Q166 67 199 62Q234 58 240 94Q224 81 205 82Q189 98 171 106Z" fill="#344054"/>
+<path d="M190 110q5 5 10 0" fill="none" stroke="#8B5E4A" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M228 151Q244 143 255 151" fill="none" stroke="#EFC3A1" stroke-width="11" stroke-linecap="round"/>
+<path class="left-hand" d="M235 151Q249 146 263 151" fill="none" stroke="#EFC3A1" stroke-width="11" stroke-linecap="round"/>
+<path d="M185 215L179 239M222 215L230 239" fill="none" stroke="#344054" stroke-width="12" stroke-linecap="round"/>
+<path d="M171 241h18M223 241h18" fill="none" stroke="#344054" stroke-width="8" stroke-linecap="round"/>
 </g>
-<g class="runner-woman" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="13">
-<circle cx="422" cy="91" r="24" fill="#F3C7A5" stroke="none"/><path d="M398 91q-4-35 25-36 30 0 25 40-5-13-12-19-19 8-38 15" fill="#493B48" stroke="none"/>
-<path d="M422 119v65" stroke="#BDACCF"/><path class="arm-a" d="M421 132l-26 14" stroke="#F3C7A5"/><path class="arm-b" d="M424 132l25 25" stroke="#F3C7A5"/>
-<path class="leg-a" d="M422 183l-25 31-22 8" stroke="#493B48"/><path class="leg-b" d="M422 183l24 37 24 5" stroke="#493B48"/>
-<path d="M365 226h19M461 226h18" stroke="#493B48" stroke-width="9"/>
+<g class="right-person">
+<ellipse cx="392" cy="238" rx="49" ry="9" fill="#D6EAF4" opacity=".65"/>
+<path d="M354 194Q355 157 374 143Q394 130 416 143Q435 157 433 194L427 218H360Z" fill="url(#ph-right)"/>
+<path d="M418 158Q438 174 427 198" fill="none" stroke="#439FCF" stroke-width="8" stroke-linecap="round"/>
+<circle cx="395" cy="105" r="35" fill="#EFC3A1"/>
+<path d="M361 105Q355 68 390 62Q428 58 431 99Q420 81 402 80Q384 97 361 105Z" fill="#5A4658"/>
+<path d="M390 110q5 5 10 0" fill="none" stroke="#8B5E4A" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M372 151Q356 143 345 151" fill="none" stroke="#EFC3A1" stroke-width="11" stroke-linecap="round"/>
+<path class="right-hand" d="M365 151Q351 146 337 151" fill="none" stroke="#EFC3A1" stroke-width="11" stroke-linecap="round"/>
+<path d="M378 215L372 239M414 215L420 239" fill="none" stroke="#5A4658" stroke-width="12" stroke-linecap="round"/>
+<path d="M364 241h18M413 241h18" fill="none" stroke="#5A4658" stroke-width="8" stroke-linecap="round"/>
 </g>
-<g class="meet-heart"><path d="M300 124c-10-12-29 2-19 15l19 18 19-18c10-13-9-27-19-15z" fill="#F3A60D"/><path d="M300 129v17" stroke="#fff" stroke-width="2" stroke-linecap="round"/></g>
-<circle cx="95" cy="72" r="5" fill="#BDACCF" opacity=".8"/><circle cx="505" cy="62" r="4" fill="#55BFF9" opacity=".9"/><path d="M90 188l8-8 8 8M494 180l8-8 8 8" fill="none" stroke="#D7C9E7" stroke-width="3" stroke-linecap="round"/>
+<g class="together-heart"><path d="M300 115C286 98 262 116 275 133L300 157L325 133C338 116 314 98 300 115Z" fill="#F3A60D"/><path d="M288 127l8 8 15-17" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round"><path class="spark" d="M111 105v14m-7-7h14" stroke="#BDACCF" stroke-width="3"/><path class="spark s2" d="M486 93v12m-6-6h12" stroke="#55BFF9" stroke-width="3"/><path class="spark s3" d="M130 190v9m-4.5-4.5h9" stroke="#F3A60D" stroke-width="2.5"/><path class="spark s4" d="M471 183v9m-4.5-4.5h9" stroke="#BDACCF" stroke-width="2.5"/></g>
+<circle cx="300" cy="44" r="4" fill="#F3A60D" opacity=".55"/><circle cx="278" cy="55" r="3" fill="#55BFF9" opacity=".65"/><circle cx="323" cy="56" r="3" fill="#BDACCF" opacity=".7"/>
 </svg></div></div></div>
 <div class="screen hidden" id="identity"><div class="eyebrow">First, a little introduction</div><h2 class="serif">Who's playing today?</h2><p class="disclaimer">One partner starts first. After completing all ten situations, you will get a link to share with your partner. Your combined score appears once both of you have answered. No email or account needed.</p><label for="name">Your name or nickname</label><input class="field" id="name" maxlength="24" placeholder="e.g. Sam"><div>Choose your character</div><div class="gender"><button type="button" data-g="man"><b>Man</b><small>Husband's perspective</small></button><button type="button" data-g="woman"><b>Woman</b><small>Wife's perspective</small></button></div><div class="toast" id="error" aria-live="polite"></div><button class="btn" id="start">Start the simulation →</button></div>
 <div class="screen hidden" id="game"><div class="tag" id="category"></div><div class="scenario"><h2 id="title"></h2><p class="story" id="story"></p><p class="prompt">How would you respond?</p><div class="choices" id="choices"></div></div><div class="pre-submit-cta hidden" id="preSubmitCta"><div><h3>Something here feel familiar?</h3><p>If a situation raised a question for you, you can explore it with a counsellor. You do not need to wait until there is a crisis.</p></div><a class="btn alt" href="book.html">Book a session</a></div><div class="actions"><button class="btn alt" id="back">← Previous</button><button class="btn" id="next" disabled>Continue →</button></div><p class="hint">Choose what you would genuinely do. Your partner won't see your answers before finishing.</p></div>
