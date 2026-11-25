@@ -1220,3 +1220,45 @@ html {
     width: min(360px, calc(100vw - 24px));
   }
 }
+
+
+/* Google Business Profile trust link */
+.google-profile-card {
+  margin: 34px auto;
+  width: min(100% - 36px, 1080px);
+  padding: 22px 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  background: #f7fafc;
+  border: 1px solid #e5eaf0;
+  border-radius: 16px;
+}
+.google-profile-card h2 {
+  margin: 0 0 4px;
+  font-size: 1.35rem;
+}
+.google-profile-card p {
+  margin: 0;
+  color: #5d6878;
+  font-size: .92rem;
+}
+.google-profile-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  padding: 10px 17px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid #d5dce5;
+  color: #172033 !important;
+  font-weight: 700;
+  font-size: .9rem;
+  text-decoration: none !important;
+}
+.google-profile-link:hover { border-color: #55bff9; color: #155e8b !important; }
+@media (max-width: 620px) {
+  .google-profile-card { align-items: flex-start; flex-direction: column; padding: 19px; }
+}
