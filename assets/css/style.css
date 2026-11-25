@@ -1123,3 +1123,100 @@ html {
 /* ---------- Trust strip ---------- */
 
 .ct-tr
+
+
+/* Therapy Services navigation dropdown */
+.nav-dropdown,
+.ph-navlinks .nav-dropdown {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+.nav-dropdown > summary {
+  list-style: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: inherit;
+  font: inherit;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.nav-dropdown > summary::-webkit-details-marker { display: none; }
+.nav-dropdown > summary::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg) translateY(-2px);
+  transition: transform .18s ease;
+}
+.nav-dropdown[open] > summary::after {
+  transform: rotate(225deg) translate(-1px, -1px);
+}
+.nav-dropdown > summary:hover,
+.nav-dropdown > summary:focus-visible { color: #155e8b; }
+.nav-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 16px);
+  left: 50%;
+  transform: translateX(-34%);
+  width: min(690px, calc(100vw - 32px));
+  padding: 22px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  background: #fff;
+  border: 1px solid #e5eaf0;
+  border-radius: 16px;
+  box-shadow: 0 18px 48px rgba(15, 23, 42, .14);
+  z-index: 1000;
+}
+.nav-dropdown-group { min-width: 0; }
+.nav-dropdown-group strong {
+  display: block;
+  margin: 0 0 10px;
+  color: #172033;
+  font-size: .78rem;
+  letter-spacing: .045em;
+  text-transform: uppercase;
+}
+.nav-dropdown-group a {
+  display: block;
+  padding: 6px 0;
+  color: #475467 !important;
+  font-size: .86rem !important;
+  line-height: 1.35;
+  text-decoration: none !important;
+}
+.nav-dropdown-group a:hover,
+.nav-dropdown-group a:focus-visible {
+  color: #155e8b !important;
+  text-decoration: underline !important;
+  text-underline-offset: 3px;
+}
+.nav-dropdown.active > summary { color: #155e8b; }
+@media (max-width: 760px) {
+  .nav-dropdown-menu {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: auto;
+    right: -90px;
+    transform: none;
+    width: min(620px, calc(100vw - 28px));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    padding: 18px;
+    max-height: min(70vh, 520px);
+    overflow-y: auto;
+  }
+}
+@media (max-width: 480px) {
+  .nav-dropdown-menu {
+    right: -130px;
+    grid-template-columns: 1fr;
+    width: min(360px, calc(100vw - 24px));
+  }
+}
