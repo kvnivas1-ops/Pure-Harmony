@@ -1262,3 +1262,24 @@ html {
 @media (max-width: 620px) {
   .google-profile-card { align-items: flex-start; flex-direction: column; padding: 19px; }
 }
+
+
+/* Marriage Simulator navigation highlight */
+.nav-links a.nav-marriage-simulator,
+.ph-navlinks a.nav-marriage-simulator {
+  font-weight: 700 !important;
+  background: linear-gradient(100deg, #2d6b58 0%, #67bce8 38%, #a77ac8 68%, #d99a45 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent !important;
+  white-space: nowrap;
+  transition: opacity .2s ease;
+}
+.nav-links a.nav-marriage-simulator:hover,
+.ph-navlinks a.nav-marriage-simulator:hover,
+.nav-links a.nav-marriage-simulator:focus-visible,
+.ph-navlinks a.nav-marriage-simulator:focus-visible {
+  opacity: .78;
+  text-decoration: none;
+}
